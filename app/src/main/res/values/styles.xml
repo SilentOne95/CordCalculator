@@ -1,0 +1,43 @@
+<resources>
+    <!-- Styles for starting (welcome) screen of the app -->
+    <!-- Welcome string  -->
+    <style name="welcome_text">
+        <item name="android:textColor">@color/defaultBlack</item>
+        <item name="android:textSize">@dimen/welcome_text_size</item>
+        <item name="android:layout_marginTop">@dimen/welcome_margin_top</item>
+        <item name="android:layout_marginLeft">@dimen/welcome_margin</item>
+        <item name="android:layout_marginRight">@dimen/welcome_margin</item>
+        <item name="android:layout_marginBottom">@dimen/welcome_margin</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <!-- Logo of the company -->
+    <style name="logo_start_screen">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">@dimen/margin_logo</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <!-- Company's motto -->
+    <style name="company_motto" parent="welcome_text">
+        <item name="android:textSize">@dimen/motto_text_size</item>
+    </style>
+    <!-- Button "start" -->
+    <style name="button_start">
+        <item name="android:background">@drawable/button_rounded_corners</item>
+        <item name="android:textColor">@color/defaultWhite</item>
+        <item name="android:textSize">@dimen/start_button_text_size</item>
+        <item name="android:layout_margin">@dimen/start_button_margin</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Calculator</string>
+
+    <!-- Strings for starting (welcome) screen of the app -->
+    <string name="welcome">Welcome!</string>
+    <string name="company_motto">Coming soon</string>
+    <string name="start">Start</string>
+</resources>
