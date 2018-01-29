@@ -4,6 +4,7 @@
     <style name="welcome_text">
         <item name="android:textColor">@color/defaultBlack</item>
         <item name="android:textSize">@dimen/welcome_text_size</item>
+        <item name="android:fontFamily">@font/lato</item>
         <item name="android:layout_marginTop">@dimen/welcome_margin_top</item>
         <item name="android:layout_marginLeft">@dimen/welcome_margin</item>
         <item name="android:layout_marginRight">@dimen/welcome_margin</item>
@@ -28,6 +29,7 @@
         <item name="android:background">@drawable/button_rounded_corners</item>
         <item name="android:textColor">@color/defaultWhite</item>
         <item name="android:textSize">@dimen/start_button_text_size</item>
+        <item name="android:fontFamily">@font/lato</item>
         <item name="android:layout_margin">@dimen/start_button_margin</item>
         <item name="android:layout_gravity">center_horizontal</item>
     </style>
