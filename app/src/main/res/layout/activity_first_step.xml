@@ -19,90 +19,166 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <!-- Testing progress bar -->
-            <ImageView
-                android:src="@drawable/bookmarker"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:layout_marginBottom="12dp" />
+                android:layout_height="wrap_content">
 
-            <View
-                android:layout_width="80dp"
-                android:layout_height="5dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/dotted_line"
-                android:layerType="software"
-                android:rotation="90" />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="420dp"
+                    android:background="#000"
+                    android:layout_centerHorizontal="true" />
 
-            <ImageView
-                android:src="@drawable/one_active"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="35dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:layout_gravity="center_horizontal" />
+                <ImageView
+                    android:id="@+id/test_one"
+                    android:src="@drawable/bookmarker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="12dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_centerHorizontal="true" />
 
-            <View
-                android:layout_width="80dp"
-                android:layout_height="5dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/dotted_line"
-                android:layerType="software"
-                android:rotation="90" />
+                <ImageView
+                    android:id="@+id/test_two"
+                    android:src="@drawable/one_active"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/test_one" />
 
-            <ImageView
-                android:src="@drawable/two_inactive"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="35dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:layout_gravity="center_horizontal" />
+                <ImageView
+                    android:id="@+id/test_three"
+                    android:src="@drawable/two_inactive"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/test_two" />
 
-            <View
-                android:layout_width="80dp"
-                android:layout_height="5dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/dotted_line"
-                android:layerType="software"
-                android:rotation="90" />
+                <ImageView
+                    android:id="@+id/test_four"
+                    android:src="@drawable/three_inactive"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/test_three" />
 
-            <ImageView
-                android:src="@drawable/three_inactive"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="35dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:layout_gravity="center_horizontal" />
+                <ImageView
+                    android:id="@+id/test_five"
+                    android:src="@drawable/four_inactive"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="40dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/test_four" />
 
-            <View
-                android:layout_width="80dp"
-                android:layout_height="5dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/dotted_line"
-                android:layerType="software"
-                android:rotation="90" />
+            </RelativeLayout>
 
-            <ImageView
-                android:src="@drawable/four_inactive"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="50dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:layout_gravity="center_horizontal" />
+            <!--Testing progress bar -->
+            <!--<ImageView-->
+            <!--android:src="@drawable/bookmarker"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:layout_marginBottom="12dp"-->
+            <!--android:layout_gravity="center_horizontal"/>-->
+
+            <!--<View-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="5dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:background="@drawable/dotted_line"-->
+            <!--android:layerType="software"-->
+            <!--android:rotation="90" />-->
+
+            <!--<ImageView-->
+            <!--android:src="@drawable/one_active"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginBottom="35dp"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:layout_gravity="center_horizontal" />-->
+
+            <!--<View-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="5dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:background="@drawable/dotted_line"-->
+            <!--android:layerType="software"-->
+            <!--android:rotation="90" />-->
+
+            <!--<ImageView-->
+            <!--android:src="@drawable/two_inactive"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginBottom="35dp"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:layout_gravity="center_horizontal" />-->
+
+            <!--<View-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="5dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:background="@drawable/dotted_line"-->
+            <!--android:layerType="software"-->
+            <!--android:rotation="90" />-->
+
+            <!--<ImageView-->
+            <!--android:src="@drawable/three_inactive"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginBottom="35dp"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:layout_gravity="center_horizontal" />-->
+
+            <!--<View-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="5dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:background="@drawable/dotted_line"-->
+            <!--android:layerType="software"-->
+            <!--android:rotation="90" />-->
+
+            <!--<ImageView-->
+            <!--android:src="@drawable/four_inactive"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginBottom="35dp"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:layout_gravity="center_horizontal" />-->
 
         </LinearLayout>
 
