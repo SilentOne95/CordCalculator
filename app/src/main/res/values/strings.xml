@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">Calculator</string>
 
-    <!-- Strings for starting (welcome) screen of the app -->
+    <!-- Strings from starting (welcome) screen of the app -->
     <string name="welcome">Welcome!</string>
     <string name="company_motto">Coming soon</string>
     <string name="start">Start</string>
+
+    <!-- Strings from second screen app - with fragments (questions and answers) -->
+    <string name="calculator_string">Calculator</string>
 </resources>

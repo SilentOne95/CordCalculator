@@ -1,28 +1,32 @@
 <resources>
+    <!-- Basic style for the app -->
+    <style name="basicStyleBobbiny">
+        <item name="android:textColor">@color/defaultBlack</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
     <!-- Styles for starting (welcome) screen of the app -->
     <!-- Welcome string  -->
-    <style name="welcome_text">
-        <item name="android:textColor">@color/defaultBlack</item>
+    <style name="welcome_text" parent="basicStyleBobbiny">
         <item name="android:textSize">@dimen/welcome_text_size</item>
-        <item name="android:fontFamily">@font/lato</item>
         <item name="android:layout_marginTop">@dimen/welcome_margin_top</item>
         <item name="android:layout_marginLeft">@dimen/welcome_margin</item>
         <item name="android:layout_marginRight">@dimen/welcome_margin</item>
         <item name="android:layout_marginBottom">@dimen/welcome_margin</item>
-        <item name="android:layout_gravity">center_horizontal</item>
     </style>
-    <!-- Logo of the company -->
+    <!-- Full logo of the company - "Bobbiny" -->
     <style name="logo_start_screen">
-        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_width">@dimen/width_logo_bobbiny</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_margin">@dimen/margin_logo</item>
+        <item name="android:layout_margin">@dimen/margin_logo_bobbiny</item>
         <item name="android:scaleType">fitCenter</item>
         <item name="android:adjustViewBounds">true</item>
         <item name="android:layout_gravity">center_horizontal</item>
     </style>
     <!-- Company's motto -->
-    <style name="company_motto" parent="welcome_text">
-        <item name="android:textSize">@dimen/motto_text_size</item>
+    <style name="company_motto" parent="basicStyleBobbiny">
+        <item name="android:textSize">@dimen/regular_text_size</item>
     </style>
     <!-- Button "start" -->
     <style name="button_start">
@@ -30,8 +34,25 @@
         <item name="android:textColor">@color/defaultWhite</item>
         <item name="android:textSize">@dimen/start_button_text_size</item>
         <item name="android:fontFamily">@font/lato</item>
-        <item name="android:layout_margin">@dimen/start_button_margin</item>
+        <item name="android:layout_marginTop">@dimen/start_button_margin_top</item>
+        <item name="android:layout_marginLeft">@dimen/start_button_margin</item>
+        <item name="android:layout_marginRight">@dimen/start_button_margin</item>
+        <item name="android:layout_marginBottom">@dimen/start_button_margin</item>
         <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!-- Second screen of the app - including questions and answers // fragments -->
+    <style name="calculator_string" parent="basicStyleBobbiny">
+        <item name="android:textSize">@dimen/regular_text_size</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <!-- Style for border below "calculator" string -->
+    <style name="border_below_calc_string">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_of_border</item>
+        <item name="android:background">@color/defaultBlack</item>
+        <item name="android:paddingTop">@dimen/padding_top_border</item>
+        <item name="android:layout_alignBottom">@id/calculator_string</item>
     </style>
 
     <!-- Base application theme. -->

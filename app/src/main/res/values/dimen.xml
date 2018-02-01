@@ -5,18 +5,24 @@
     <dimen name="welcome_margin">20dp</dimen>
     <dimen name="welcome_margin_top">40dp</dimen>
 
-    <!-- Values for the logo image -->
-    <dimen name="width_logo">200dp</dimen>
-    <dimen name="height_logo">150dp</dimen>
-    <dimen name="margin_logo">20dp</dimen>
+    <!-- Values for the logo image "Bobbiny" -->
+    <dimen name="width_logo_bobbiny">250dp</dimen>
+    <dimen name="margin_logo_bobbiny">20dp</dimen>
 
-    <!-- Values for the company's motto -->
-    <dimen name="motto_text_size">24sp</dimen>
+    <!-- Values for the company's motto and string "calculator" -->
+    <dimen name="regular_text_size">24sp</dimen>
+    <dimen name="calculator_string_padding_bottom">5dp</dimen>
 
     <!-- Values for "start" button on first screen -->
     <dimen name="padding_ten">10dp</dimen>
     <dimen name="radius_corners">25dp</dimen>
 
     <dimen name="start_button_text_size">16sp</dimen>
-    <dimen name="start_button_margin">20dp</dimen>
+    <dimen name="start_button_margin">30dp</dimen>
+    <dimen name="start_button_margin_top">80dp</dimen>
+
+    <!-- Values for the "right column" of second screen - which includes questions -->
+    <dimen name="width_of_border">150dp</dimen>
+    <dimen name="height_of_border">2dp</dimen>
+    <dimen name="padding_top_border">5dp</dimen>
 </resources>

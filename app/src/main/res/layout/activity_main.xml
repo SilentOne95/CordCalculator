@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.cordcalculator.MainActivity"
-    android:background="@color/defaultWhite">
+    android:background="@drawable/gradient_background">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,8 +20,8 @@
             style="@style/welcome_text" />
 
         <ImageView
-            android:id="@+id/logo_first_screen"
-            android:src="@drawable/bobbiny_logo"
+            android:id="@+id/logo_start_screen"
+            android:src="@drawable/bobbiny_full_logo"
             style="@style/logo_start_screen"/>
 
         <TextView
