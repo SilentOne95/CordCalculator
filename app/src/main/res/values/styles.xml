@@ -3,7 +3,6 @@
     <style name="basicStyleBobbiny">
         <item name="android:textColor">@color/defaultBlack</item>
         <item name="android:fontFamily">@font/lato</item>
-        <item name="android:layout_gravity">center_horizontal</item>
     </style>
 
     <!-- Styles for starting (welcome) screen of the app -->
@@ -14,6 +13,7 @@
         <item name="android:layout_marginLeft">@dimen/welcome_margin</item>
         <item name="android:layout_marginRight">@dimen/welcome_margin</item>
         <item name="android:layout_marginBottom">@dimen/welcome_margin</item>
+        <item name="android:layout_gravity">center_horizontal</item>
     </style>
     <!-- Full logo of the company - "Bobbiny" -->
     <style name="logo_start_screen">
@@ -27,6 +27,7 @@
     <!-- Company's motto -->
     <style name="company_motto" parent="basicStyleBobbiny">
         <item name="android:textSize">@dimen/regular_text_size</item>
+        <item name="android:layout_gravity">center_horizontal</item>
     </style>
     <!-- Button "start" -->
     <style name="button_start">
@@ -44,7 +45,9 @@
     <!-- Second screen of the app - including questions and answers // fragments -->
     <style name="calculator_string" parent="basicStyleBobbiny">
         <item name="android:textSize">@dimen/regular_text_size</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_gravity">center_horizontal</item>
     </style>
     <!-- Style for border below "calculator" string -->
     <style name="border_below_calc_string">
@@ -53,6 +56,17 @@
         <item name="android:background">@color/defaultBlack</item>
         <item name="android:paddingTop">@dimen/padding_top_border</item>
         <item name="android:layout_alignBottom">@id/calculator_string</item>
+    </style>
+
+    <!-- Style for strings including questions to the user -->
+    <style name="questions" parent="basicStyleBobbiny">
+        <item name="android:textSize">@dimen/questions_text_size</item>
+        <item name="android:paddingTop">@dimen/questions_padding_top</item>
+        <item name="android:paddingBottom">@dimen/questions_padding_bottom</item>
+    </style>
+
+    <style name="answers" parent="basicStyleBobbiny">
+        <item name="android:textSize">@dimen/questions_text_size</item>
     </style>
 
     <!-- Base application theme. -->

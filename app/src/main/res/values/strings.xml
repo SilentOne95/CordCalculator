@@ -8,4 +8,11 @@
 
     <!-- Strings from second screen app - with fragments (questions and answers) -->
     <string name="calculator_string">Calculator</string>
+
+    <string name="question_one">1. Choose your project:</string>
+    <string name="first_q_first_answer">Rectangular rug</string>
+    <string name="first_q_second_answer">Circular rug</string>
+    <string name="first_q_third_answer">Basket</string>
+    <string name="first_q_fourth_answer">Pillow</string>
+    <string name="first_q_fifth_answer">Pouf</string>
 </resources>

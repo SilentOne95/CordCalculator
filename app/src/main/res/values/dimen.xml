@@ -10,7 +10,7 @@
     <dimen name="margin_logo_bobbiny">20dp</dimen>
 
     <!-- Values for the company's motto and string "calculator" -->
-    <dimen name="regular_text_size">24sp</dimen>
+    <dimen name="regular_text_size">28sp</dimen>
     <dimen name="calculator_string_padding_bottom">5dp</dimen>
 
     <!-- Values for "start" button on first screen -->
@@ -22,7 +22,12 @@
     <dimen name="start_button_margin_top">80dp</dimen>
 
     <!-- Values for the "right column" of second screen - which includes questions -->
-    <dimen name="width_of_border">150dp</dimen>
+    <dimen name="ten_dp">10dp</dimen>
+    <dimen name="width_of_border">180dp</dimen>
     <dimen name="height_of_border">2dp</dimen>
     <dimen name="padding_top_border">5dp</dimen>
+
+    <dimen name="questions_text_size">20sp</dimen>
+    <dimen name="questions_padding_top">25dp</dimen>
+    <dimen name="questions_padding_bottom">10dp</dimen>
 </resources>
