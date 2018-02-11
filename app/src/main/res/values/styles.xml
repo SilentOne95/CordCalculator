@@ -5,6 +5,13 @@
         <item name="android:fontFamily">@font/lato</item>
     </style>
 
+    <style name="defaultButtonStyle">
+        <item name="android:background">@drawable/button_rounded_corners</item>
+        <item name="android:textColor">@color/defaultWhite</item>
+        <item name="android:textSize">@dimen/start_button_text_size</item>
+        <item name="android:fontFamily">@font/lato</item>
+    </style>
+
     <!-- Styles for starting (welcome) screen of the app -->
     <!-- Welcome string  -->
     <style name="welcome_text" parent="basicStyleBobbiny">
@@ -30,11 +37,7 @@
         <item name="android:layout_gravity">center_horizontal</item>
     </style>
     <!-- Button "start" -->
-    <style name="button_start">
-        <item name="android:background">@drawable/button_rounded_corners</item>
-        <item name="android:textColor">@color/defaultWhite</item>
-        <item name="android:textSize">@dimen/start_button_text_size</item>
-        <item name="android:fontFamily">@font/lato</item>
+    <style name="button_start" parent="defaultButtonStyle">
         <item name="android:layout_marginTop">@dimen/start_button_margin_top</item>
         <item name="android:layout_marginLeft">@dimen/start_button_margin</item>
         <item name="android:layout_marginRight">@dimen/start_button_margin</item>
@@ -42,13 +45,21 @@
         <item name="android:layout_gravity">center_horizontal</item>
     </style>
 
-    <!-- Second screen of the app - including questions and answers // fragments -->
+    <!-- Second screen of the app (main layout) -->
     <style name="calculator_string" parent="basicStyleBobbiny">
         <item name="android:textSize">@dimen/regular_text_size</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_alignParentBottom">true</item>
         <item name="android:layout_gravity">center_horizontal</item>
     </style>
+
+    <style name="button_next" parent="defaultButtonStyle">
+        <item name="android:layout_marginTop">@dimen/next_button_margin_top</item>
+        <item name="android:layout_marginRight">@dimen/next_button_margin_right</item>
+        <item name="android:layout_marginBottom">@dimen/next_button_margin_bottom</item>
+        <item name="android:layout_gravity">right</item>
+    </style>
+
     <!-- Style for border below "calculator" string -->
     <style name="border_below_calc_string">
         <item name="android:layout_width">match_parent</item>
@@ -59,14 +70,19 @@
     </style>
 
     <!-- Style for strings including questions to the user -->
-    <style name="questions" parent="basicStyleBobbiny">
-        <item name="android:textSize">@dimen/questions_text_size</item>
-        <item name="android:paddingTop">@dimen/questions_padding_top</item>
-        <item name="android:paddingBottom">@dimen/questions_padding_bottom</item>
+    <style name="commands" parent="basicStyleBobbiny">
+        <item name="android:textSize">@dimen/command_text_size</item>
+        <item name="android:paddingTop">@dimen/command_padding_top</item>
+        <item name="android:paddingBottom">@dimen/command_padding_bottom</item>
     </style>
 
     <style name="answers" parent="basicStyleBobbiny">
-        <item name="android:textSize">@dimen/questions_text_size</item>
+        <item name="android:textSize">@dimen/command_text_size</item>
+        <item name="android:layout_marginLeft">@dimen/answers_margin_left</item>
+    </style>
+
+    <style name="answers_cord_length" parent="answers">
+        <item name="android:layout_marginLeft">@dimen/answers_length_margin_left</item>
     </style>
 
     <!-- Base application theme. -->

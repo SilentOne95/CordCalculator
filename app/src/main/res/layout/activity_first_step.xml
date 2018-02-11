@@ -1,282 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.android.cordcalculator.FirstStepActivity"
-    android:background="@drawable/gradient_background">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.example.android.cordcalculator.FirstStep"
+    tools:showIn="@layout/activity_main_layout"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/question_one"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_gravity="center_horizontal"
+        android:text="@string/step_one"
+        style="@style/commands" />
 
-        <!-- Includes logo and progress bar on the left side of the screen -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+    <CheckBox
+        android:id="@+id/first_q_first_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_step_first_answer"
+        style="@style/answers" />
 
-            <!-- Testing progress bar -> straight line with no pattern -->
-            <!--<RelativeLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content">-->
+    <CheckBox
+        android:id="@+id/first_q_second_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_step_second_answer"
+        style="@style/answers" />
 
-            <!--<View-->
-            <!--android:layout_width="2dp"-->
-            <!--android:layout_height="420dp"-->
-            <!--android:background="#000"-->
-            <!--android:layout_centerHorizontal="true" />-->
+    <CheckBox
+        android:id="@+id/first_q_third_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_step_third_answer"
+        style="@style/answers" />
 
-            <!--<ImageView-->
-            <!--android:id="@+id/test_one"-->
-            <!--android:src="@drawable/bookmarker"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="100dp"-->
-            <!--android:layout_marginBottom="12dp"-->
-            <!--android:scaleType="fitCenter"-->
-            <!--android:adjustViewBounds="true"-->
-            <!--android:layout_centerHorizontal="true" />-->
+    <CheckBox
+        android:id="@+id/first_q_fourth_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_step_fourth_answer"
+        style="@style/answers" />
 
-            <!--<ImageView-->
-            <!--android:id="@+id/test_two"-->
-            <!--android:src="@drawable/one_active"-->
-            <!--android:layout_width="50dp"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginTop="10dp"-->
-            <!--android:layout_marginLeft="10dp"-->
-            <!--android:layout_marginRight="10dp"-->
-            <!--android:scaleType="fitCenter"-->
-            <!--android:adjustViewBounds="true"-->
-            <!--android:layout_centerHorizontal="true"-->
-            <!--android:layout_below="@id/test_one" />-->
+    <CheckBox
+        android:id="@+id/first_q_fifth_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_step_fifth_answer"
+        style="@style/answers" />
 
-            <!--<ImageView-->
-            <!--android:id="@+id/test_three"-->
-            <!--android:src="@drawable/two_inactive"-->
-            <!--android:layout_width="50dp"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginTop="40dp"-->
-            <!--android:layout_marginLeft="10dp"-->
-            <!--android:layout_marginRight="10dp"-->
-            <!--android:scaleType="fitCenter"-->
-            <!--android:adjustViewBounds="true"-->
-            <!--android:layout_centerHorizontal="true"-->
-            <!--android:layout_below="@+id/test_two" />-->
-
-            <!--<ImageView-->
-            <!--android:id="@+id/test_four"-->
-            <!--android:src="@drawable/three_inactive"-->
-            <!--android:layout_width="50dp"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginTop="40dp"-->
-            <!--android:layout_marginLeft="10dp"-->
-            <!--android:layout_marginRight="10dp"-->
-            <!--android:scaleType="fitCenter"-->
-            <!--android:adjustViewBounds="true"-->
-            <!--android:layout_centerHorizontal="true"-->
-            <!--android:layout_below="@+id/test_three" />-->
-
-            <!--<ImageView-->
-            <!--android:id="@+id/test_five"-->
-            <!--android:src="@drawable/four_inactive"-->
-            <!--android:layout_width="50dp"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginTop="40dp"-->
-            <!--android:layout_marginLeft="10dp"-->
-            <!--android:layout_marginRight="10dp"-->
-            <!--android:layout_marginBottom="40dp"-->
-            <!--android:scaleType="fitCenter"-->
-            <!--android:adjustViewBounds="true"-->
-            <!--android:layout_centerHorizontal="true"-->
-            <!--android:layout_below="@+id/test_four" />-->
-
-            <!--</RelativeLayout>-->
-
-            <!--Testing progress bar - dashed line-->
-            <ImageView
-                android:src="@drawable/bookmarker"
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:layout_marginBottom="12dp"
-                android:layout_gravity="center_horizontal" />
-
-            <View
-                android:layout_width="80dp"
-                android:layout_height="5dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/dashed_line"
-                android:layerType="software"
-                android:rotation="90" />
-
-            <ImageView
-                android:src="@drawable/one_active"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="35dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:layout_gravity="center_horizontal" />
-
-            <View
-                android:layout_width="80dp"
-                android:layout_height="5dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/dashed_line"
-                android:layerType="software"
-                android:rotation="90" />
-
-            <ImageView
-                android:src="@drawable/two_inactive"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="35dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:layout_gravity="center_horizontal" />
-
-            <View
-                android:layout_width="80dp"
-                android:layout_height="5dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/dashed_line"
-                android:layerType="software"
-                android:rotation="90" />
-
-            <ImageView
-                android:src="@drawable/three_inactive"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="35dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:layout_gravity="center_horizontal" />
-
-            <View
-                android:layout_width="80dp"
-                android:layout_height="5dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/dashed_line"
-                android:layerType="software"
-                android:rotation="90" />
-
-            <ImageView
-                android:src="@drawable/four_inactive"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="35dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:layout_gravity="center_horizontal" />
-
-        </LinearLayout>
-
-        <!-- Includes question witch answers on the right side of the screen -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:orientation="vertical">
-
-            <RelativeLayout
-                android:layout_width="@dimen/width_of_border"
-                android:layout_height="100dp"
-                android:layout_gravity="end">
-
-                <TextView
-                    android:id="@+id/calculator_string"
-                    style="@style/calculator_string"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/calculator_string" />
-
-                <View style="@style/border_below_calc_string" />
-
-            </RelativeLayout>
-
-            <!-- Contains fragments -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/question_one"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/question_one"
-                    style="@style/questions"
-                    android:layout_gravity="center_horizontal" />
-
-                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="@dimen/ten_dp">
-
-                    <RadioButton
-                        android:id="@+id/first_q_first_answer"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/first_q_first_answer"
-                        style="@style/answers" />
-
-                    <RadioButton
-                        android:id="@+id/first_q_second_answer"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/first_q_second_answer"
-                        style="@style/answers" />
-
-                    <RadioButton
-                        android:id="@+id/first_q_third_answer"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/first_q_third_answer"
-                        style="@style/answers" />
-
-                    <RadioButton
-                        android:id="@+id/first_q_fourth_answer"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/first_q_fourth_answer"
-                        style="@style/answers" />
-
-                    <RadioButton
-                        android:id="@+id/first_q_fifth_answer"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/first_q_fifth_answer"
-                        style="@style/answers" />
-
-                </RadioGroup>
-
-            </LinearLayout>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Next"
-                style="@style/button_start"
-                android:layout_marginTop="120dp"
-                android:layout_gravity="right"
-                android:layout_marginRight="20dp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-</ScrollView>
+</LinearLayout>

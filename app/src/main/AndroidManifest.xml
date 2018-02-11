@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".StartingScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,8 +22,11 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name=".FirstStepActivity"
-            android:label="first_step" />
+            android:name=".MainLayoutActivity"
+            android:label="main_layout" />
+        <activity android:name=".FirstStep" />
+        <activity android:name=".SecondStep" />
+        <activity android:name=".ThirdStep"></activity>
     </application>
 
 </manifest>

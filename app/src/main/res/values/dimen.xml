@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Values for the first (welcome) screen of the app -->
+    <!-- First screen of the app -->
     <dimen name="welcome_text_size">45sp</dimen>
     <dimen name="welcome_margin">20dp</dimen>
     <dimen name="welcome_margin_top">40dp</dimen>
 
-    <!-- Values for the logo image "Bobbiny" -->
+    <!-- Logo image "Bobbiny" -->
     <dimen name="width_logo_bobbiny">250dp</dimen>
     <dimen name="margin_logo_bobbiny">20dp</dimen>
 
-    <!-- Values for the company's motto and string "calculator" -->
+    <!-- Company's motto and string "calculator" -->
     <dimen name="regular_text_size">28sp</dimen>
     <dimen name="calculator_string_padding_bottom">5dp</dimen>
 
-    <!-- Values for "start" button on first screen -->
+    <!-- "Start" button -->
     <dimen name="padding_ten">10dp</dimen>
     <dimen name="radius_corners">25dp</dimen>
 
@@ -21,13 +21,22 @@
     <dimen name="start_button_margin">30dp</dimen>
     <dimen name="start_button_margin_top">80dp</dimen>
 
-    <!-- Values for the "right column" of second screen - which includes questions -->
-    <dimen name="ten_dp">10dp</dimen>
+    <!-- Main Layout -->
+    <!-- "Right column" of this layout -->
     <dimen name="width_of_border">180dp</dimen>
     <dimen name="height_of_border">2dp</dimen>
     <dimen name="padding_top_border">5dp</dimen>
 
-    <dimen name="questions_text_size">20sp</dimen>
-    <dimen name="questions_padding_top">25dp</dimen>
-    <dimen name="questions_padding_bottom">10dp</dimen>
+    <!-- Questions and answers -->
+    <dimen name="command_text_size">20sp</dimen>
+    <dimen name="command_padding_top">25dp</dimen>
+    <dimen name="command_padding_bottom">10dp</dimen>
+
+    <dimen name="answers_margin_left">20dp</dimen>
+    <dimen name="answers_length_margin_left">40dp</dimen>
+
+    <!-- "Next" button -->
+    <dimen name="next_button_margin_top">120dp</dimen>
+    <dimen name="next_button_margin_right">20dp</dimen>
+    <dimen name="next_button_margin_bottom">20dp</dimen>
 </resources>

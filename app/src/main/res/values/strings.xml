@@ -1,18 +1,31 @@
 <resources>
     <string name="app_name">Calculator</string>
 
-    <!-- Strings from starting (welcome) screen of the app -->
+    <!-- Starting (welcome) screen of the app -->
     <string name="welcome">Welcome!</string>
     <string name="company_motto">Coming soon</string>
     <string name="start">Start</string>
 
-    <!-- Strings from second screen app - with fragments (questions and answers) -->
+    <!-- Second screen app (main layout) -->
     <string name="calculator_string">Calculator</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
 
-    <string name="question_one">1. Choose your project:</string>
-    <string name="first_q_first_answer">Rectangular rug</string>
-    <string name="first_q_second_answer">Circular rug</string>
-    <string name="first_q_third_answer">Basket</string>
-    <string name="first_q_fourth_answer">Pillow</string>
-    <string name="first_q_fifth_answer">Pouf</string>
+    <!-- Re-usable layouts -->
+    <string name="step_one">1. Choose your project:</string>
+    <string name="first_step_first_answer">Rectangular rug</string>
+    <string name="first_step_second_answer">Circular rug</string>
+    <string name="first_step_third_answer">Basket</string>
+    <string name="first_step_fourth_answer">Pillow</string>
+    <string name="first_step_fifth_answer">Pouf</string>
+
+    <string name="step_two">2. Choose size and length of the cord:</string>
+    <string name="second_step_first_answer">3mm</string>
+    <string name="second_step_second_answer">5mm</string>
+    <string name="second_step_third_answer">9mm</string>
+    <string name="cord_length_twenty">20m</string>
+    <string name="cord_length_fifty">50m</string>
+    <string name="cord_length_hundred">100m</string>
+
+    <string name="step_three">3. Type your dimensions:</string>
 </resources>
