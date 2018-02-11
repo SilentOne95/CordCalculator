@@ -18,73 +18,62 @@
         style="@style/commands" />
 
     <CheckBox
-        android:id="@+id/second_q_first_answer"
+        android:id="@+id/second_step_first_answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/second_step_first_answer"
         style="@style/answers" />
 
     <CheckBox
-        android:id="@+id/first_q_length_fifty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cord_length_fifty"
-        style="@style/answers_cord_length" />
-
-    <CheckBox
-        android:id="@+id/first_q_length_hundred"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cord_length_hundred"
-        style="@style/answers_cord_length" />
-
-    <CheckBox
-        android:id="@+id/second_q_second_answer"
+        android:id="@+id/second_step_second_answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/second_step_second_answer"
         style="@style/answers" />
 
     <CheckBox
-        android:id="@+id/second_q_length_fifty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cord_length_fifty"
-        style="@style/answers_cord_length" />
-
-    <CheckBox
-        android:id="@+id/second_q_length_hundred"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cord_length_hundred"
-        style="@style/answers_cord_length" />
-
-    <CheckBox
-        android:id="@+id/second_q_third_answer"
+        android:id="@+id/second_step_third_answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/second_step_third_answer"
         style="@style/answers" />
 
     <CheckBox
-        android:id="@+id/third_q_length_twenty"
+        android:id="@+id/second_step_fourth_answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/cord_length_twenty"
-        style="@style/answers_cord_length" />
+        android:text="@string/second_step_fourth_answer"
+        style="@style/answers" />
 
-    <CheckBox
-        android:id="@+id/third_q_length_fifty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cord_length_fifty"
-        style="@style/answers_cord_length" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <CheckBox
-        android:id="@+id/third_q_length_hundred"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cord_length_hundred"
-        style="@style/answers_cord_length" />
+        <ImageButton
+            android:src="@drawable/left"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp" />
+        <!--android:background="@drawable/button_switch_rounded"-->
+        <!--android:paddingRight="2dp"/>-->
+
+        <ImageButton
+            android:src="@drawable/right"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp" />
+
+        <!--android:background="@drawable/button_switch_rounded"-->
+        <!--android:paddingLeft="2dp"-->
+
+    </RelativeLayout>
 
 </LinearLayout>

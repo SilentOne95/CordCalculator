@@ -207,15 +207,9 @@
             </RelativeLayout>
 
             <!-- Contains re-usable layouts -->
-            <include layout="@layout/activity_first_step" />
-            <!--<include layout="@layactivity_second_steption"/>-->
-            <!--<include layout="@layactivity_third_steption"/>-->
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/next"
-                style="@style/button_next" />
+            <!--<include layout="@layout/activity_first_step" />-->
+            <include layout="@layout/activity_second_step" />
+            <!--<include layout="@layout/activity_third_step"/>-->
 
         </LinearLayout>
 

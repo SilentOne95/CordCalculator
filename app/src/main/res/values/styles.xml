@@ -53,13 +53,6 @@
         <item name="android:layout_gravity">center_horizontal</item>
     </style>
 
-    <style name="button_next" parent="defaultButtonStyle">
-        <item name="android:layout_marginTop">@dimen/next_button_margin_top</item>
-        <item name="android:layout_marginRight">@dimen/next_button_margin_right</item>
-        <item name="android:layout_marginBottom">@dimen/next_button_margin_bottom</item>
-        <item name="android:layout_gravity">right</item>
-    </style>
-
     <!-- Style for border below "calculator" string -->
     <style name="border_below_calc_string">
         <item name="android:layout_width">match_parent</item>
@@ -69,7 +62,7 @@
         <item name="android:layout_alignBottom">@id/calculator_string</item>
     </style>
 
-    <!-- Style for strings including questions to the user -->
+    <!-- Style for strings including commands, answers to choose and buttons -->
     <style name="commands" parent="basicStyleBobbiny">
         <item name="android:textSize">@dimen/command_text_size</item>
         <item name="android:paddingTop">@dimen/command_padding_top</item>
@@ -77,12 +70,22 @@
     </style>
 
     <style name="answers" parent="basicStyleBobbiny">
-        <item name="android:textSize">@dimen/command_text_size</item>
-        <item name="android:layout_marginLeft">@dimen/answers_margin_left</item>
+        <item name="android:textSize">@dimen/answer_text_size</item>
+        <item name="android:layout_marginLeft">@dimen/answer_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/answer_margin_top</item>
     </style>
 
-    <style name="answers_cord_length" parent="answers">
-        <item name="android:layout_marginLeft">@dimen/answers_length_margin_left</item>
+    <style name="button_switch_step" parent="defaultButtonStyle">
+        <item name="android:layout_marginTop">@dimen/button_switch_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/button_switch_margin_bottom</item>
+    </style>
+
+    <style name="button_switch_next" parent="button_switch_step">
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="button_switch_back" parent="button_switch_step">
+        <item name="android:layout_alignParentLeft">true</item>
     </style>
 
     <!-- Base application theme. -->

@@ -52,4 +52,72 @@
         android:text="@string/first_step_fifth_answer"
         style="@style/answers" />
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:src="@drawable/left"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp" />
+        <!--android:background="@drawable/button_switch_rounded"-->
+        <!--android:paddingRight="2dp"/>-->
+
+        <ImageButton
+            android:src="@drawable/right"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp" />
+        <!--android:background="@drawable/button_switch_rounded"-->
+        <!--android:paddingLeft="2dp"-->
+
+        <!--<ImageButton-->
+        <!--android:src="@drawable/arrow_left"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="@drawable/button_rounded_corners"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginLeft="10dp"/>-->
+
+        <!--<ImageButton-->
+        <!--android:src="@drawable/arrow_right"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="@drawable/button_rounded_corners"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginRight="10dp"/>-->
+
+        <!--<Button-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:drawableLeft="@drawable/arrow_left"-->
+        <!--android:gravity="center"-->
+        <!--android:background="@drawable/button_rounded_corners"-->
+        <!--style="@style/button_switch_back"-->
+        <!--android:layout_marginLeft="10dp"/>-->
+
+        <!--<Button-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:drawableRight="@drawable/arrow_right"-->
+        <!--android:gravity="center"-->
+        <!--android:background="@drawable/button_rounded_corners"-->
+        <!--style="@style/button_switch_next"-->
+        <!--android:layout_marginRight="10dp"/>-->
+
+    </RelativeLayout>
+
 </LinearLayout>

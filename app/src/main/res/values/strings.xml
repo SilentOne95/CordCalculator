@@ -20,12 +20,10 @@
     <string name="first_step_fifth_answer">Pouf</string>
 
     <string name="step_two">2. Choose size and length of the cord:</string>
-    <string name="second_step_first_answer">3mm</string>
-    <string name="second_step_second_answer">5mm</string>
-    <string name="second_step_third_answer">9mm</string>
-    <string name="cord_length_twenty">20m</string>
-    <string name="cord_length_fifty">50m</string>
-    <string name="cord_length_hundred">100m</string>
+    <string name="second_step_first_answer">Cotton cord Junior\n3mm</string>
+    <string name="second_step_second_answer">Cotton cord Premium\n5mm</string>
+    <string name="second_step_third_answer">Cotton cord Jumbo\n9mm</string>
+    <string name="second_step_fourth_answer">Bobbiny t-shirt yarn</string>
 
     <string name="step_three">3. Type your dimensions:</string>
 </resources>
