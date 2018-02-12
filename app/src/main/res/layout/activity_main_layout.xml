@@ -207,8 +207,8 @@
             </RelativeLayout>
 
             <!-- Contains re-usable layouts -->
-            <!--<include layout="@layout/activity_first_step" />-->
-            <include layout="@layout/activity_second_step" />
+            <include layout="@layout/activity_first_step" />
+            <!--<include layout="@layout/activity_second_step" />-->
             <!--<include layout="@layout/activity_third_step"/>-->
 
         </LinearLayout>

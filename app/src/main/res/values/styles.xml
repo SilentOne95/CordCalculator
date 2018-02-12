@@ -75,17 +75,23 @@
         <item name="android:layout_marginTop">@dimen/answer_margin_top</item>
     </style>
 
-    <style name="button_switch_step" parent="defaultButtonStyle">
+    <!-- Style for switch step buttons (arrows left / right) -->
+    <style name="button_switch_step">
+        <item name="android:layout_height">@dimen/button_switch_size</item>
+        <item name="android:layout_width">@dimen/button_switch_size</item>
+        <item name="android:scaleType">fitCenter</item>
         <item name="android:layout_marginTop">@dimen/button_switch_margin_top</item>
         <item name="android:layout_marginBottom">@dimen/button_switch_margin_bottom</item>
     </style>
 
-    <style name="button_switch_next" parent="button_switch_step">
-        <item name="android:layout_alignParentRight">true</item>
-    </style>
-
     <style name="button_switch_back" parent="button_switch_step">
         <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">@dimen/button_switch_margin_left</item>
+    </style>
+
+    <style name="button_switch_next" parent="button_switch_step">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/button_switch_margin_right</item>
     </style>
 
     <!-- Base application theme. -->

@@ -36,7 +36,10 @@
     <dimen name="answer_margin_left">20dp</dimen>
     <dimen name="answer_margin_top">2dp</dimen>
 
-    <!-- "Next" button -->
-    <dimen name="button_switch_margin_top">80dp</dimen>
+    <!-- Arrows next / back -->
+    <dimen name="button_switch_size">40dp</dimen>
+    <dimen name="button_switch_margin_top">20dp</dimen>
     <dimen name="button_switch_margin_bottom">20dp</dimen>
+    <dimen name="button_switch_margin_left">20dp</dimen>
+    <dimen name="button_switch_margin_right">20dp</dimen>
 </resources>
