@@ -207,9 +207,48 @@
             </RelativeLayout>
 
             <!-- Contains re-usable layouts -->
-            <include layout="@layout/activity_first_step" />
-            <!--<include layout="@layout/activity_second_step" />-->
-            <!--<include layout="@layout/activity_third_step"/>-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/view_flipper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <include
+                        android:id="@+id/include_first_step"
+                        layout="@layout/activity_first_step" />
+
+                    <include
+                        android:id="@+id/include_second_step"
+                        layout="@layout/activity_second_step" />
+
+                    <include
+                        android:id="@+id/include_third_step"
+                        layout="@layout/activity_third_step" />
+
+                    <!--<include layout="@layout/activity_first_step" />-->
+                    <!--<include layout="@layout/activity_second_step" />-->
+                    <!--<include layout="@layout/activity_third_step"/>-->
+
+                </ViewFlipper>
+
+                <ImageButton
+                    android:id="@+id/button_step_next"
+                    style="@style/button_switch_next"
+                    android:background="@null"
+                    android:src="@drawable/arrow_right"
+                    android:onClick="openNextStep" />
+
+                <ImageButton
+                    android:id="@+id/button_step_back"
+                    style="@style/button_switch_back"
+                    android:background="@null"
+                    android:src="@drawable/arrow_left"
+                    android:onClick="openPreviousStep" />
+
+            </RelativeLayout>
 
         </LinearLayout>
 

@@ -2,6 +2,8 @@ package com.example.android.cordcalculator;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ViewFlipper;
 
 public class FirstStep extends AppCompatActivity {
 

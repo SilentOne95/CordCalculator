@@ -5,9 +5,9 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     tools:context="com.example.android.cordcalculator.FirstStep"
-    tools:showIn="@layout/activity_main_layout"
     android:orientation="vertical"
     android:layout_gravity="center_horizontal">
+    <!--tools:showIn="@layout/activity_main_layout"-->
 
     <TextView
         android:id="@+id/question_one"
@@ -52,14 +52,14 @@
         android:text="@string/first_step_fifth_answer"
         style="@style/answers" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
 
-        <ImageButton
-            android:src="@drawable/arrow_right"
-            android:background="@null"
-            style="@style/button_switch_next" />
+    <!--<ImageButton-->
+    <!--android:src="@drawable/arrow_right"-->
+    <!--android:background="@null"-->
+    <!--style="@style/button_switch_next" />-->
 
         <!--<ImageButton-->
         <!--android:src="@drawable/arrow_left"-->
@@ -99,6 +99,6 @@
         <!--style="@style/button_switch_next"-->
         <!--android:layout_marginRight="10dp"/>-->
 
-    </RelativeLayout>
+    <!--</RelativeLayout>-->
 
 </LinearLayout>
