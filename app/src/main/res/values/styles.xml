@@ -53,6 +53,35 @@
         <item name="android:layout_gravity">center_horizontal</item>
     </style>
 
+    <!-- Includes styles for progress bar -->
+    <style name="bookmark">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/bookmark_height</item>
+        <item name="android:layout_marginBottom">@dimen/bookmark_margin_bottom</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="image_step_number">
+        <item name="android:layout_width">@dimen/number_size</item>
+        <item name="android:layout_height">@dimen/number_size</item>
+        <item name="android:layout_marginLeft">@dimen/number_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/number_margin_right</item>
+        <item name="android:layout_marginBottom">@dimen/number_margin_bottom</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="dashed_line">
+        <item name="android:layout_width">@dimen/line_width</item>
+        <item name="android:layout_height">@dimen/line_height</item>
+        <item name="android:rotation">90</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layerType">software</item>
+    </style>
+
     <!-- Style for border below "calculator" string -->
     <style name="border_below_calc_string">
         <item name="android:layout_width">match_parent</item>
@@ -62,7 +91,7 @@
         <item name="android:layout_alignBottom">@id/calculator_string</item>
     </style>
 
-    <!-- Style for strings including commands, answers to choose and buttons -->
+    <!-- Style for strings including commands and answers -->
     <style name="commands" parent="basicStyleBobbiny">
         <item name="android:textSize">@dimen/command_text_size</item>
         <item name="android:paddingTop">@dimen/command_padding_top</item>

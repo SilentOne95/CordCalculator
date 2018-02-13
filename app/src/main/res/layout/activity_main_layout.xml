@@ -19,7 +19,7 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <!-- Testing progress bar -> straight line with no pattern -->
+            <!-- Testing progress bar => straight line with no pattern -->
             <!--<RelativeLayout-->
             <!--android:layout_width="match_parent"-->
             <!--android:layout_height="wrap_content">-->
@@ -97,89 +97,41 @@
 
             <!--Testing progress bar - dashed line-->
             <ImageView
-                android:src="@drawable/bookmarker"
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:layout_marginBottom="12dp"
-                android:layout_gravity="center_horizontal" />
+                android:id="@+id/bookmark"
+                android:src="@drawable/bookmark"
+                style="@style/bookmark" />
 
             <View
-                android:layout_width="80dp"
-                android:layout_height="5dp"
-                android:layout_gravity="center_horizontal"
                 android:background="@drawable/dashed_line"
-                android:layerType="software"
-                android:rotation="90" />
+                style="@style/dashed_line" />
 
             <ImageView
-                android:src="@drawable/one_active"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="35dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:layout_gravity="center_horizontal" />
+                android:id="@+id/imageStepOne"
+                style="@style/image_step_number" />
 
             <View
-                android:layout_width="80dp"
-                android:layout_height="5dp"
-                android:layout_gravity="center_horizontal"
                 android:background="@drawable/dashed_line"
-                android:layerType="software"
-                android:rotation="90" />
+                style="@style/dashed_line" />
 
             <ImageView
-                android:src="@drawable/two_inactive"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="35dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:layout_gravity="center_horizontal" />
+                android:id="@+id/imageStepTwo"
+                style="@style/image_step_number" />
 
             <View
-                android:layout_width="80dp"
-                android:layout_height="5dp"
-                android:layout_gravity="center_horizontal"
                 android:background="@drawable/dashed_line"
-                android:layerType="software"
-                android:rotation="90" />
+                style="@style/dashed_line" />
 
             <ImageView
-                android:src="@drawable/three_inactive"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="35dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:layout_gravity="center_horizontal" />
+                android:id="@+id/imageStepThree"
+                style="@style/image_step_number" />
 
             <View
-                android:layout_width="80dp"
-                android:layout_height="5dp"
-                android:layout_gravity="center_horizontal"
                 android:background="@drawable/dashed_line"
-                android:layerType="software"
-                android:rotation="90" />
+                style="@style/dashed_line" />
 
             <ImageView
-                android:src="@drawable/four_inactive"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="35dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:layout_gravity="center_horizontal" />
+                android:id="@+id/imageStepFour"
+                style="@style/image_step_number" />
 
         </LinearLayout>
 
@@ -228,9 +180,9 @@
                         android:id="@+id/include_third_step"
                         layout="@layout/activity_third_step" />
 
-                    <!--<include layout="@layout/activity_first_step" />-->
-                    <!--<include layout="@layout/activity_second_step" />-->
-                    <!--<include layout="@layout/activity_third_step"/>-->
+                    <include
+                        android:id="@+id/include_fourth_step"
+                        layout="@layout/activity_fourth_step" />
 
                 </ViewFlipper>
 
