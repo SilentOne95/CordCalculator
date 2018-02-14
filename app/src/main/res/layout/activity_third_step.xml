@@ -5,26 +5,13 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     tools:context="com.example.android.cordcalculator.ThirdStep"
-    android:orientation="vertical"
-    android:layout_gravity="center_horizontal">
-    <!--tools:showIn="@layout/activity_main_layout"-->
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/question_three"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:text="@string/step_three"
         style="@style/commands" />
-
-    <!--<ImageButton-->
-    <!--android:src="@drawable/arrow_left"-->
-    <!--android:background="@null"-->
-    <!--style="@style/button_switch_back" />-->
-
-    <!--<ImageButton-->
-    <!--android:src="@drawable/arrow_right"-->
-    <!--android:background="@null"-->
-    <!--style="@style/button_switch_next" />-->
 
 </LinearLayout>

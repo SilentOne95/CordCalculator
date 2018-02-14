@@ -5,16 +5,12 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     tools:context="com.example.android.cordcalculator.SecondStep"
-    android:orientation="vertical"
-    android:layout_gravity="center_horizontal">
-    <!--tools:showIn="@layout/activity_main_layout"-->
-
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/question_two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:text="@string/step_two"
         style="@style/commands" />
 
@@ -45,21 +41,5 @@
         android:layout_height="wrap_content"
         android:text="@string/second_step_fourth_answer"
         style="@style/answers" />
-
-    <!--<RelativeLayout-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content">-->
-
-    <!--<ImageButton-->
-    <!--android:src="@drawable/arrow_left"-->
-    <!--android:background="@null"-->
-    <!--style="@style/button_switch_back" />-->
-
-    <!--<ImageButton-->
-    <!--android:src="@drawable/arrow_right"-->
-    <!--android:background="@null"-->
-    <!--style="@style/button_switch_next" />-->
-
-    <!--</RelativeLayout>-->
 
 </LinearLayout>

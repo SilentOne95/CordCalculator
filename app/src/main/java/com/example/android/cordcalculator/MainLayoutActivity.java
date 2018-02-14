@@ -23,11 +23,13 @@ public class MainLayoutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_layout);
 
+        // Re-usable layouts
         vf = findViewById(R.id.view_flipper);
         previousStep = findViewById(R.id.button_step_back);
         previousStep.setVisibility(View.GONE);
         nextStep = findViewById(R.id.button_step_next);
 
+        // Progress bar images
         stepOneImage = findViewById(R.id.imageStepOne);
         stepOneImage.setImageResource(R.drawable.one_active);
         stepTwoImage = findViewById(R.id.imageStepTwo);
@@ -38,6 +40,7 @@ public class MainLayoutActivity extends AppCompatActivity {
         stepFourImage.setImageResource(R.drawable.four_inactive);
     }
 
+    // Methods check if button next / previous should be shown.
     public void openNextStep(View view) {
         vf.showNext();
         previousStep.setVisibility(View.VISIBLE);
@@ -59,6 +62,7 @@ public class MainLayoutActivity extends AppCompatActivity {
         switchStepImage(vf.getDisplayedChild());
     }
 
+    // Responsible for showing active step in progress bar
     public void switchStepImage(int numberOfStep) {
         switch (numberOfStep) {
             case 0:

@@ -5,15 +5,12 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     tools:context="com.example.android.cordcalculator.FirstStep"
-    android:orientation="vertical"
-    android:layout_gravity="center_horizontal">
-    <!--tools:showIn="@layout/activity_main_layout"-->
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/question_one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:text="@string/step_one"
         style="@style/commands" />
 
@@ -51,54 +48,5 @@
         android:layout_height="wrap_content"
         android:text="@string/first_step_fifth_answer"
         style="@style/answers" />
-
-    <!--<RelativeLayout-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content">-->
-
-    <!--<ImageButton-->
-    <!--android:src="@drawable/arrow_right"-->
-    <!--android:background="@null"-->
-    <!--style="@style/button_switch_next" />-->
-
-        <!--<ImageButton-->
-        <!--android:src="@drawable/arrow_left"-->
-        <!--android:scaleType="fitCenter"-->
-        <!--android:layout_width="40dp"-->
-        <!--android:layout_height="40dp"-->
-        <!--android:background="@drawable/button_rounded_corners"-->
-        <!--android:layout_alignParentLeft="true"-->
-        <!--android:layout_marginTop="20dp"-->
-        <!--android:layout_marginLeft="10dp"/>-->
-
-        <!--<ImageButton-->
-        <!--android:src="@drawable/arrow_right"-->
-        <!--android:scaleType="fitCenter"-->
-        <!--android:layout_width="40dp"-->
-        <!--android:layout_height="40dp"-->
-        <!--android:background="@drawable/button_rounded_corners"-->
-        <!--android:layout_alignParentRight="true"-->
-        <!--android:layout_marginTop="20dp"-->
-        <!--android:layout_marginRight="10dp"/>-->
-
-        <!--<Button-->
-        <!--android:layout_width="50dp"-->
-        <!--android:layout_height="50dp"-->
-        <!--android:drawableLeft="@drawable/arrow_left"-->
-        <!--android:gravity="center"-->
-        <!--android:background="@drawable/button_rounded_corners"-->
-        <!--style="@style/button_switch_back"-->
-        <!--android:layout_marginLeft="10dp"/>-->
-
-        <!--<Button-->
-        <!--android:layout_width="50dp"-->
-        <!--android:layout_height="50dp"-->
-        <!--android:drawableRight="@drawable/arrow_right"-->
-        <!--android:gravity="center"-->
-        <!--android:background="@drawable/button_rounded_corners"-->
-        <!--style="@style/button_switch_next"-->
-        <!--android:layout_marginRight="10dp"/>-->
-
-    <!--</RelativeLayout>-->
 
 </LinearLayout>
