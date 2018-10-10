@@ -11,16 +11,19 @@
     <dimen name="regular_text_size">24sp</dimen>
 
     <!-- "Start" button -->
-    <dimen name="start_button_padding">10dp</dimen>
+    <dimen name="start_button_padding">12dp</dimen>
+    <dimen name="start_button_padding_left_right">26dp</dimen>
     <dimen name="start_button_radius_corners">25dp</dimen>
-    <dimen name="start_button_text_size">16sp</dimen>
+    <dimen name="start_button_text_size">20sp</dimen>
 
     <!-- Main Layout -->
     <!-- Progress bar - main screen -->
-    <dimen name="bookmark_image_size">100dp</dimen>
+    <dimen name="bookmark_image_width">130dp</dimen>
+    <dimen name="bookmark_image_height">120dp</dimen>
     <dimen name="bookmark_image_margin">24dp</dimen>
     <dimen name="dashed_line_width">1dp</dimen>
-    <dimen name="dashed_line_height">370dp</dimen>
+    <dimen name="dashed_line_height">0dp</dimen>
+    <dimen name="dashed_line_margin_bottom">8dp</dimen>
     <dimen name="step_image_size">50dp</dimen>
     <dimen name="step_image_margin_top">32dp</dimen>
 </resources>
