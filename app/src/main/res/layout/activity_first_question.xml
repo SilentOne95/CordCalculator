@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".first_question">
+
+    <TextView
+        android:id="@+id/first_step"
+        style="@style/question_text_view"
+        android:text="@string/first_step"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/first_step_first_answer"
+        style="@style/answer_checkbox"
+        android:text="@string/first_step_first_answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_step"
+        app:buttonTint="@color/defaultBlack"/>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/first_step_second_answer"
+        style="@style/answer_checkbox"
+        android:text="@string/first_step_second_answer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_step_first_answer"
+        app:buttonTint="@color/defaultBlack"/>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/first_step_third_answer"
+        style="@style/answer_checkbox"
+        android:text="@string/first_step_third_answer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_step_second_answer"
+        app:buttonTint="@color/defaultBlack"/>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/first_step_fourth_answer"
+        style="@style/answer_checkbox"
+        android:text="@string/first_step_fourth_answer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_step_third_answer"
+        app:buttonTint="@color/defaultBlack"/>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/first_step_fifth_answer"
+        style="@style/answer_checkbox"
+        android:text="@string/first_step_fifth_answer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_step_fourth_answer"
+        app:buttonTint="@color/defaultBlack"/>
+
+</android.support.constraint.ConstraintLayout>

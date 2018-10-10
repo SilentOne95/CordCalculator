@@ -20,10 +20,18 @@
     <!-- Progress bar - main screen -->
     <dimen name="bookmark_image_width">130dp</dimen>
     <dimen name="bookmark_image_height">120dp</dimen>
-    <dimen name="bookmark_image_margin">24dp</dimen>
+    <dimen name="bookmark_image_margin">18dp</dimen>
     <dimen name="dashed_line_width">1dp</dimen>
     <dimen name="dashed_line_height">0dp</dimen>
     <dimen name="dashed_line_margin_bottom">8dp</dimen>
     <dimen name="step_image_size">50dp</dimen>
     <dimen name="step_image_margin_top">32dp</dimen>
+
+    <!-- Questions and answers - ViewFlipper -->
+    <dimen name="question_text_size">24dp</dimen>
+    <dimen name="checkbox_text_size">20dp</dimen>
+
+    <!-- General values -->
+    <dimen name="small_value">8dp</dimen>
+    <dimen name="mid_value">16dp</dimen>
 </resources>

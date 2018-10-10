@@ -24,6 +24,7 @@
         <activity
             android:name=".MainLayoutActivity"
             android:label="main_layout" />
+        <activity android:name=".first_question"></activity>
     </application>
 
 </manifest>

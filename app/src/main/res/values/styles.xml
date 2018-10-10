@@ -58,6 +58,22 @@
         <item name="android:layout_marginTop">@dimen/step_image_margin_top</item>
     </style>
 
+    <!-- First question activity -->
+    <style name="question_text_view" parent="basicTextStyle">
+        <item name="android:layout_marginStart">@dimen/small_value</item>
+        <item name="android:layout_marginTop">@dimen/small_value</item>
+        <item name="android:layout_marginBottom">@dimen/small_value</item>
+        <item name="android:textSize">@dimen/question_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="answer_checkbox" parent="basicTextStyle">
+        <item name="android:layout_marginStart">@dimen/mid_value</item>
+        <item name="android:layout_marginTop">@dimen/small_value</item>
+        <item name="android:layout_marginEnd">@dimen/mid_value</item>
+        <item name="android:textSize">@dimen/checkbox_text_size</item>
+    </style>
+
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
