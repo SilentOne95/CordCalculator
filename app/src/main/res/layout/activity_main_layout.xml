@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,127 +7,51 @@
     tools:context="com.example.android.cordcalculator.MainLayoutActivity"
     android:background="@drawable/gradient_background">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+    <View
+        android:id="@+id/dashed_line"
+        android:background="@color/defaultBlack"
+        app:layout_constraintEnd_toEndOf="@id/bookmark_image"
+        app:layout_constraintStart_toStartOf="@id/bookmark_image"
+        app:layout_constraintTop_toTopOf="@id/bookmark_image"
+        style="@style/vertical_dashed_line"/>
 
-        <!-- Includes logo and progress bar on the left side of the screen -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+    <ImageView
+        android:id="@+id/bookmark_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/bookmark_image"
+        android:contentDescription="@string/bookmark_image_description"/>
 
-            <!--Progress bar with dashed line-->
-            <ImageView
-                android:id="@+id/bookmark"
-                android:src="@drawable/bookmark"
-                style="@style/bookmark" />
+    <ImageView
+        android:id="@+id/image_step_one"
+        app:layout_constraintEnd_toEndOf="@id/bookmark_image"
+        app:layout_constraintStart_toStartOf="@id/bookmark_image"
+        app:layout_constraintTop_toBottomOf="@id/bookmark_image"
+        style="@style/image_step_number"
+        android:contentDescription="@string/step_image_description"/>
 
-            <View
-                android:background="@drawable/dashed_line"
-                style="@style/dashed_line" />
+    <ImageView
+        android:id="@+id/image_step_two"
+        app:layout_constraintEnd_toEndOf="@id/bookmark_image"
+        app:layout_constraintStart_toStartOf="@id/bookmark_image"
+        app:layout_constraintTop_toBottomOf="@id/image_step_one"
+        style="@style/image_step_number"
+        android:contentDescription="@string/step_image_description"/>
 
-            <ImageView
-                android:id="@+id/imageStepOne"
-                style="@style/image_step_number" />
+    <ImageView
+        android:id="@+id/image_step_three"
+        app:layout_constraintEnd_toEndOf="@id/bookmark_image"
+        app:layout_constraintStart_toStartOf="@id/bookmark_image"
+        app:layout_constraintTop_toBottomOf="@id/image_step_two"
+        style="@style/image_step_number"
+        android:contentDescription="@string/step_image_description"/>
 
-            <View
-                android:background="@drawable/dashed_line"
-                style="@style/dashed_line" />
+    <ImageView
+        android:id="@+id/image_step_four"
+        app:layout_constraintEnd_toEndOf="@id/bookmark_image"
+        app:layout_constraintStart_toStartOf="@id/bookmark_image"
+        app:layout_constraintTop_toBottomOf="@id/image_step_three"
+        style="@style/image_step_number"
+        android:contentDescription="@string/step_image_description"/>
 
-            <ImageView
-                android:id="@+id/imageStepTwo"
-                style="@style/image_step_number" />
-
-            <View
-                android:background="@drawable/dashed_line"
-                style="@style/dashed_line" />
-
-            <ImageView
-                android:id="@+id/imageStepThree"
-                style="@style/image_step_number" />
-
-            <View
-                android:background="@drawable/dashed_line"
-                style="@style/dashed_line" />
-
-            <ImageView
-                android:id="@+id/imageStepFour"
-                style="@style/image_step_number" />
-
-        </LinearLayout>
-
-        <!-- Includes question witch answers on the right side of the screen -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:orientation="vertical">
-
-            <RelativeLayout
-                android:layout_width="@dimen/width_of_border"
-                android:layout_height="100dp"
-                android:layout_gravity="end">
-
-                <TextView
-                    android:id="@+id/calculator_string"
-                    style="@style/calculator_string"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/calculator_string" />
-
-                <View style="@style/border_below_calc_string" />
-
-            </RelativeLayout>
-
-            <!-- Contains re-usable layouts -->
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/view_flipper"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <include
-                        android:id="@+id/include_first_step"
-                        layout="@layout/activity_first_step" />
-
-                    <include
-                        android:id="@+id/include_second_step"
-                        layout="@layout/activity_second_step" />
-
-                    <include
-                        android:id="@+id/include_third_step"
-                        layout="@layout/activity_third_step" />
-
-                    <include
-                        android:id="@+id/include_fourth_step"
-                        layout="@layout/activity_fourth_step" />
-
-                </ViewFlipper>
-
-                <ImageButton
-                    android:id="@+id/button_step_next"
-                    style="@style/button_switch_next"
-                    android:background="@null"
-                    android:src="@drawable/arrow_right"
-                    android:onClick="openNextStep" />
-
-                <ImageButton
-                    android:id="@+id/button_step_back"
-                    style="@style/button_switch_back"
-                    android:background="@null"
-                    android:src="@drawable/arrow_left"
-                    android:onClick="openPreviousStep" />
-
-            </RelativeLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-</ScrollView>
+</android.support.constraint.ConstraintLayout>

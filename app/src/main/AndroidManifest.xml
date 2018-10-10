@@ -24,10 +24,6 @@
         <activity
             android:name=".MainLayoutActivity"
             android:label="main_layout" />
-        <activity android:name=".FirstStep" />
-        <activity android:name=".SecondStep" />
-        <activity android:name=".ThirdStep" />
-        <activity android:name=".FourthStep"></activity>
     </application>
 
 </manifest>

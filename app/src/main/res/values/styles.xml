@@ -1,8 +1,10 @@
 <resources>
     <!-- Basic style for the app -->
-    <style name="basicStyleBobbiny">
+    <style name="basicTextStyle">
         <item name="android:textColor">@color/defaultBlack</item>
         <item name="android:fontFamily">@font/lato</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
     <style name="defaultButtonStyle">
@@ -12,120 +14,49 @@
         <item name="android:fontFamily">@font/lato</item>
     </style>
 
-    <!-- Styles for starting (welcome) screen of the app -->
-    <!-- Welcome string  -->
-    <style name="welcome_text" parent="basicStyleBobbiny">
+    <!-- First screen of the app -->
+    <style name="welcome_text_view" parent="basicTextStyle">
         <item name="android:textSize">@dimen/welcome_text_size</item>
-        <item name="android:layout_marginTop">@dimen/welcome_margin_top</item>
-        <item name="android:layout_marginLeft">@dimen/welcome_margin</item>
-        <item name="android:layout_marginRight">@dimen/welcome_margin</item>
-        <item name="android:layout_marginBottom">@dimen/welcome_margin</item>
-        <item name="android:layout_gravity">center_horizontal</item>
     </style>
-    <!-- Full logo of the company - "Bobbiny" -->
-    <style name="logo_start_screen">
+
+    <style name="full_logo_image_view">
         <item name="android:layout_width">@dimen/width_logo_bobbiny</item>
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_margin">@dimen/margin_logo_bobbiny</item>
+        <item name="android:layout_height">@dimen/height_logo_bobbiny</item>
         <item name="android:scaleType">fitCenter</item>
-        <item name="android:adjustViewBounds">true</item>
-        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:contentDescription">@string/full_logo_description</item>
     </style>
-    <!-- Company's motto -->
-    <style name="company_motto" parent="basicStyleBobbiny">
+
+    <style name="motto_text_view" parent="basicTextStyle">
         <item name="android:textSize">@dimen/regular_text_size</item>
-        <item name="android:layout_gravity">center_horizontal</item>
     </style>
-    <!-- Button "start" -->
+
     <style name="button_start" parent="defaultButtonStyle">
-        <item name="android:layout_marginTop">@dimen/start_button_margin_top</item>
-        <item name="android:layout_marginLeft">@dimen/start_button_margin</item>
-        <item name="android:layout_marginRight">@dimen/start_button_margin</item>
-        <item name="android:layout_marginBottom">@dimen/start_button_margin</item>
-        <item name="android:layout_gravity">center_horizontal</item>
-    </style>
-
-    <!-- Second screen of the app (main layout) -->
-    <style name="calculator_string" parent="basicStyleBobbiny">
-        <item name="android:textSize">@dimen/regular_text_size</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:layout_alignParentBottom">true</item>
-        <item name="android:layout_gravity">center_horizontal</item>
-    </style>
-
-    <!-- Includes styles for progress bar -->
-    <style name="bookmark">
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">@dimen/bookmark_height</item>
-        <item name="android:layout_marginBottom">@dimen/bookmark_margin_bottom</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Main screen of the app -->
+    <!-- Progress bar -->
+    <style name="vertical_dashed_line">
+        <item name="android:layout_width">@dimen/dashed_line_width</item>
+        <item name="android:layout_height">@dimen/dashed_line_height</item>
+    </style>
+
+    <style name="bookmark_image">
+        <item name="android:layout_width">@dimen/bookmark_image_size</item>
+        <item name="android:layout_height">@dimen/bookmark_image_size</item>
+        <item name="android:layout_marginStart">@dimen/bookmark_image_margin</item>
         <item name="android:scaleType">fitCenter</item>
-        <item name="android:adjustViewBounds">true</item>
-        <item name="android:layout_gravity">center_horizontal</item>
     </style>
 
     <style name="image_step_number">
-        <item name="android:layout_width">@dimen/number_size</item>
-        <item name="android:layout_height">@dimen/number_size</item>
-        <item name="android:layout_marginLeft">@dimen/number_margin_left</item>
-        <item name="android:layout_marginRight">@dimen/number_margin_right</item>
-        <item name="android:layout_marginBottom">@dimen/number_margin_bottom</item>
-        <item name="android:scaleType">fitCenter</item>
-        <item name="android:adjustViewBounds">true</item>
-        <item name="android:layout_gravity">center_horizontal</item>
-    </style>
-
-    <style name="dashed_line">
-        <item name="android:layout_width">@dimen/line_width</item>
-        <item name="android:layout_height">@dimen/line_height</item>
-        <item name="android:rotation">90</item>
-        <item name="android:layout_gravity">center_horizontal</item>
-        <item name="android:layerType">software</item>
-    </style>
-
-    <!-- Style for border below "calculator" string -->
-    <style name="border_below_calc_string">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/height_of_border</item>
-        <item name="android:background">@color/defaultBlack</item>
-        <item name="android:paddingTop">@dimen/padding_top_border</item>
-        <item name="android:layout_alignBottom">@id/calculator_string</item>
-    </style>
-
-    <!-- Style for strings including commands and answers -->
-    <style name="commands" parent="basicStyleBobbiny">
-        <item name="android:textSize">@dimen/command_text_size</item>
-        <item name="android:paddingTop">@dimen/command_padding_top</item>
-        <item name="android:paddingBottom">@dimen/command_padding_bottom</item>
-    </style>
-
-    <style name="answers" parent="basicStyleBobbiny">
-        <item name="android:textSize">@dimen/answer_text_size</item>
-        <item name="android:layout_marginLeft">@dimen/answer_margin_left</item>
-        <item name="android:layout_marginTop">@dimen/answer_margin_top</item>
-    </style>
-
-    <!-- Style for switch step buttons (arrows left / right) -->
-    <style name="button_switch_step">
-        <item name="android:layout_height">@dimen/button_switch_size</item>
-        <item name="android:layout_width">@dimen/button_switch_size</item>
-        <item name="android:scaleType">fitCenter</item>
-        <item name="android:layout_marginTop">@dimen/button_switch_margin_top</item>
-        <item name="android:layout_marginBottom">@dimen/button_switch_margin_bottom</item>
-        <item name="android:layout_below">@id/view_flipper</item>
-    </style>
-
-    <style name="button_switch_back" parent="button_switch_step">
-        <item name="android:layout_alignParentLeft">true</item>
-        <item name="android:layout_marginLeft">@dimen/button_switch_margin_left</item>
-    </style>
-
-    <style name="button_switch_next" parent="button_switch_step">
-        <item name="android:layout_alignParentRight">true</item>
-        <item name="android:layout_marginRight">@dimen/button_switch_margin_right</item>
+        <item name="android:layout_width">@dimen/step_image_size</item>
+        <item name="android:layout_height">@dimen/step_image_size</item>
+        <item name="android:layout_marginTop">@dimen/step_image_margin_top</item>
     </style>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>

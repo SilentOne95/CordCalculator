@@ -1,60 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- First screen of the app -->
-    <dimen name="welcome_text_size">45sp</dimen>
-    <dimen name="welcome_margin">20dp</dimen>
-    <dimen name="welcome_margin_top">40dp</dimen>
+    <dimen name="welcome_text_size">48dp</dimen>
 
     <!-- Logo image "Bobbiny" -->
     <dimen name="width_logo_bobbiny">250dp</dimen>
-    <dimen name="margin_logo_bobbiny">20dp</dimen>
+    <dimen name="height_logo_bobbiny">150dp</dimen>
 
-    <!-- Company's motto and string "calculator" -->
-    <dimen name="regular_text_size">28sp</dimen>
-    <dimen name="calculator_string_padding_bottom">5dp</dimen>
+    <!-- Company's motto, string "calculator" -->
+    <dimen name="regular_text_size">24sp</dimen>
 
     <!-- "Start" button -->
-    <dimen name="padding_ten">10dp</dimen>
-    <dimen name="radius_corners">25dp</dimen>
-
+    <dimen name="start_button_padding">10dp</dimen>
+    <dimen name="start_button_radius_corners">25dp</dimen>
     <dimen name="start_button_text_size">16sp</dimen>
-    <dimen name="start_button_margin">30dp</dimen>
-    <dimen name="start_button_margin_top">80dp</dimen>
 
     <!-- Main Layout -->
-    <!-- "Left column" with progress bar -->
-    <!-- Bookmark image -->
-    <dimen name="bookmark_height">100dp</dimen>
-    <dimen name="bookmark_margin_bottom">12dp</dimen>
-
-    <!-- Step number images -->
-    <dimen name="number_size">50dp</dimen>
-    <dimen name="number_margin_left">10dp</dimen>
-    <dimen name="number_margin_right">10dp</dimen>
-    <dimen name="number_margin_bottom">35dp</dimen>
-
-    <!-- Dashed line -->
-    <dimen name="line_width">80dp</dimen>
-    <dimen name="line_height">5dp</dimen>
-
-    <!-- "Right column" which includes strings and buttons -->
-    <dimen name="width_of_border">180dp</dimen>
-    <dimen name="height_of_border">2dp</dimen>
-    <dimen name="padding_top_border">5dp</dimen>
-
-    <!-- Questions and answers -->
-    <dimen name="command_text_size">22sp</dimen>
-    <dimen name="command_padding_top">25dp</dimen>
-    <dimen name="command_padding_bottom">10dp</dimen>
-
-    <dimen name="answer_text_size">16sp</dimen>
-    <dimen name="answer_margin_left">20dp</dimen>
-    <dimen name="answer_margin_top">5dp</dimen>
-
-    <!-- Arrows next / back -->
-    <dimen name="button_switch_size">40dp</dimen>
-    <dimen name="button_switch_margin_top">20dp</dimen>
-    <dimen name="button_switch_margin_bottom">20dp</dimen>
-    <dimen name="button_switch_margin_left">30dp</dimen>
-    <dimen name="button_switch_margin_right">30dp</dimen>
+    <!-- Progress bar - main screen -->
+    <dimen name="bookmark_image_size">100dp</dimen>
+    <dimen name="bookmark_image_margin">24dp</dimen>
+    <dimen name="dashed_line_width">1dp</dimen>
+    <dimen name="dashed_line_height">370dp</dimen>
+    <dimen name="step_image_size">50dp</dimen>
+    <dimen name="step_image_margin_top">32dp</dimen>
 </resources>

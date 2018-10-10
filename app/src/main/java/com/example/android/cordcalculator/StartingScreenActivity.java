@@ -13,7 +13,7 @@ public class StartingScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_starting_screen);
     }
 
-    public void openFirstStep(View view) {
+    public void startProcess(View view) {
         Intent i = new Intent(this, MainLayoutActivity.class);
         startActivity(i);
     }
