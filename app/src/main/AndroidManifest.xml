@@ -24,7 +24,10 @@
         <activity
             android:name=".MainLayoutActivity"
             android:label="main_layout" />
-        <activity android:name=".first_question"></activity>
+        <activity android:name=".FirstQuestion" />
+        <activity android:name=".SecondQuestion" />
+        <activity android:name=".ThirdQuestion" />
+        <activity android:name=".FourthQuestion"></activity>
     </application>
 
 </manifest>
