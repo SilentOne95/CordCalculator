@@ -74,7 +74,7 @@
     </style>
 
     <style name="view_flipper">
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">@dimen/view_flipper_width</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">@dimen/small_value</item>
         <item name="android:layout_marginBottom">@dimen/small_value</item>
@@ -93,6 +93,22 @@
         <item name="android:layout_marginStart">@dimen/mid_value</item>
         <item name="android:layout_marginTop">@dimen/small_value</item>
         <item name="android:textSize">@dimen/checkbox_text_size</item>
+    </style>
+
+    <!-- ImageButtons below View Flipper (arrows) -->
+    <style name="button_arrow_image">
+        <item name="android:layout_width">@dimen/arrow_image_size</item>
+        <item name="android:layout_height">@dimen/arrow_image_size</item>
+        <item name="android:layout_marginTop">@dimen/arrow_button_margin_top</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="button_arrow_image_left" parent="button_arrow_image">
+        <item name="android:layout_marginStart">@dimen/small_value</item>
+    </style>
+
+    <style name="button_arrow_image_right" parent="button_arrow_image">
+        <item name="android:layout_marginEnd">@dimen/small_value</item>
     </style>
 
     <!-- Base application theme. -->

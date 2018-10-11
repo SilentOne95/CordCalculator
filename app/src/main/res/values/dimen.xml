@@ -32,8 +32,13 @@
     <dimen name="underline_view_height">3dp</dimen>
 
     <!-- Questions and answers - ViewFlipper -->
+    <dimen name="view_flipper_width">190dp</dimen>
     <dimen name="question_text_size">24dp</dimen>
     <dimen name="checkbox_text_size">20dp</dimen>
+
+    <!-- Arrow buttons (left, right) -->
+    <dimen name="arrow_image_size">40dp</dimen>
+    <dimen name="arrow_button_margin_top">48dp</dimen>
 
     <!-- General values -->
     <dimen name="zero_value">0dp</dimen>
