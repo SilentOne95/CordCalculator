@@ -41,7 +41,7 @@
     <!-- Progress bar -->
     <style name="vertical_dashed_line">
         <item name="android:layout_width">@dimen/dashed_line_width</item>
-        <item name="android:layout_height">@dimen/dashed_line_height</item>
+        <item name="android:layout_height">@dimen/zero_value</item>
         <item name="android:layout_marginBottom">@dimen/dashed_line_margin_bottom</item>
     </style>
 
@@ -58,6 +58,28 @@
         <item name="android:layout_marginTop">@dimen/step_image_margin_top</item>
     </style>
 
+    <!-- Calculator string, view (line) below and ViewFlipper -->
+    <style name="calculator_text_view" parent="basicTextStyle">
+        <item name="android:text">@string/calculator_string</item>
+        <item name="android:textSize">@dimen/calculator_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart">@dimen/calculator_padding_left</item>
+    </style>
+
+    <style name="underline_view">
+        <item name="android:layout_width">@dimen/zero_value</item>
+        <item name="android:layout_height">@dimen/underline_view_height</item>
+        <item name="android:layout_marginTop">@dimen/small_value</item>
+        <item name="android:background">@color/defaultBlack</item>
+    </style>
+
+    <style name="view_flipper">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/small_value</item>
+        <item name="android:layout_marginBottom">@dimen/small_value</item>
+    </style>
+
     <!-- First question activity -->
     <style name="question_text_view" parent="basicTextStyle">
         <item name="android:layout_marginStart">@dimen/small_value</item>
@@ -70,7 +92,6 @@
     <style name="answer_checkbox" parent="basicTextStyle">
         <item name="android:layout_marginStart">@dimen/mid_value</item>
         <item name="android:layout_marginTop">@dimen/small_value</item>
-        <item name="android:layout_marginEnd">@dimen/mid_value</item>
         <item name="android:textSize">@dimen/checkbox_text_size</item>
     </style>
 

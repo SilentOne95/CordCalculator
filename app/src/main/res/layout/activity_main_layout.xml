@@ -64,41 +64,29 @@
 
     <TextView
         android:id="@+id/calculator_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calculator"
-        android:textColor="@color/defaultBlack"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        android:paddingStart="20dp"
+        style="@style/calculator_text_view"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.75" />
 
     <View
         android:id="@+id/underline_view"
-        android:layout_width="0dp"
-        android:layout_height="3dp"
-        android:layout_marginTop="8dp"
-        android:background="@color/defaultBlack"
+        style="@style/underline_view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/calculator_text_view"
-        app:layout_constraintTop_toBottomOf="@+id/calculator_text_view" />
+        app:layout_constraintStart_toStartOf="@id/calculator_text_view"
+        app:layout_constraintTop_toBottomOf="@id/calculator_text_view" />
 
     <ViewFlipper
         android:id="@+id/viewFlipper"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
+        style="@style/view_flipper"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/underline_view"
+        app:layout_constraintTop_toBottomOf="@id/underline_view"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintVertical_bias="0.1">
 
         <include

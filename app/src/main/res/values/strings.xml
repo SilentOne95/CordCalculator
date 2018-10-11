@@ -7,6 +7,8 @@
     <string name="start_button">start</string>
 
     <!-- ViewFlipper - Steps and answers -->
+    <string name="calculator_string">Calculator</string>
+
     <string name="first_step">1. I want to knit:</string>
     <string name="first_step_first_answer">Rectangular rug</string>
     <string name="first_step_second_answer">Circular rug</string>
