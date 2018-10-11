@@ -92,6 +92,18 @@
             android:id="@+id/include_first_step"
             layout="@layout/activity_first_question" />
 
+        <include
+            android:id="@+id/include_second_step"
+            layout="@layout/activity_second_question" />
+
+        <include
+            android:id="@+id/include_third_step"
+            layout="@layout/activity_third_question" />
+
+        <include
+            android:id="@+id/include_fourth_step"
+            layout="@layout/activity_fourth_question" />
+
     </ViewFlipper>
 
     <android.support.constraint.Barrier
@@ -107,7 +119,8 @@
         style="@style/button_arrow_image_left"
         app:layout_constraintStart_toStartOf="@+id/viewFlipper"
         app:layout_constraintTop_toTopOf="@+id/barrier"
-        android:contentDescription="@string/arrow_image_button"/>
+        android:contentDescription="@string/arrow_image_button"
+        android:onClick="moveBack"/>
 
     <ImageButton
         android:id="@+id/image_arrow_right"
@@ -115,6 +128,7 @@
         style="@style/button_arrow_image_right"
         app:layout_constraintEnd_toEndOf="@+id/viewFlipper"
         app:layout_constraintTop_toTopOf="@+id/barrier"
-        android:contentDescription="@string/arrow_image_button"/>
+        android:contentDescription="@string/arrow_image_button"
+        android:onClick="moveNext"/>
 
 </android.support.constraint.ConstraintLayout>
