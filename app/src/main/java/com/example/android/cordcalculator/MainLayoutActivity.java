@@ -5,25 +5,24 @@ import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
 public class MainLayoutActivity extends AppCompatActivity {
 
-    ViewFlipper vf;
-    ImageButton moveBackButton;
-    ImageButton moveNextButton;
-    ImageView stepOneImage;
-    ImageView stepTwoImage;
-    ImageView stepThreeImage;
-    ImageView stepFourImage;
+    private ViewFlipper vf;
+    ImageButton moveBackButton, moveNextButton;
+    ImageView stepOneImage, stepTwoImage, stepThreeImage, stepFourImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_layout);
 
+        // Get references
         // Re-usable layouts
         vf = findViewById(R.id.viewFlipper);
         moveBackButton = findViewById(R.id.image_arrow_left);
@@ -39,11 +38,30 @@ public class MainLayoutActivity extends AppCompatActivity {
         stepThreeImage.setImageResource(R.drawable.three_inactive);
         stepFourImage = findViewById(R.id.image_step_four);
         stepFourImage.setImageResource(R.drawable.four_inactive);
+
+        // Listener for changing views in ViewFlipper
+        moveNextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nextView(v);
+            }
+        });
+
+        moveBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                previousView(v);
+            }
+        });
     }
 
-    // Checks if button next / previous is redundant
-    public void moveNext(View view) {
+    // Store logic of button's functionality (right arrow)
+    public void nextView(View v) {
+        vf.setInAnimation(this, android.R.anim.slide_in_left);
+        vf.setOutAnimation(this, android.R.anim.slide_out_right);
         vf.showNext();
+
+        // Checks if button is redundant
         moveBackButton.setVisibility(View.VISIBLE);
 
         if (vf.getDisplayedChild() == 3)
@@ -52,9 +70,13 @@ public class MainLayoutActivity extends AppCompatActivity {
         switchStepImage(vf.getDisplayedChild());
     }
 
-    public void moveBack(View view) {
+    // Store logic of button's functionality (left arrow)
+    public void previousView(View v) {
+        vf.setInAnimation(this, R.anim.left_in);
+        vf.setOutAnimation(this, R.anim.right_out);
         vf.showPrevious();
 
+        // Checks if button is redundant
         if (vf.getDisplayedChild() == 0)
             moveBackButton.setVisibility(View.GONE);
         else if (vf.getDisplayedChild() == 2)

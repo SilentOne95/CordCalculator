@@ -29,7 +29,6 @@
         android:id="@+id/image_step_one"
         style="@style/image_step_number"
         android:contentDescription="@string/step_image_description"
-        android:src="@drawable/one_active"
         app:layout_constraintEnd_toEndOf="@id/bookmark_image"
         app:layout_constraintStart_toStartOf="@id/bookmark_image"
         app:layout_constraintTop_toBottomOf="@id/bookmark_image" />
@@ -38,7 +37,6 @@
         android:id="@+id/image_step_two"
         style="@style/image_step_number"
         android:contentDescription="@string/step_image_description"
-        android:src="@drawable/two_active"
         app:layout_constraintEnd_toEndOf="@id/bookmark_image"
         app:layout_constraintStart_toStartOf="@id/bookmark_image"
         app:layout_constraintTop_toBottomOf="@id/image_step_one" />
@@ -47,7 +45,6 @@
         android:id="@+id/image_step_three"
         style="@style/image_step_number"
         android:contentDescription="@string/step_image_description"
-        android:src="@drawable/three_active"
         app:layout_constraintEnd_toEndOf="@id/bookmark_image"
         app:layout_constraintStart_toStartOf="@id/bookmark_image"
         app:layout_constraintTop_toBottomOf="@id/image_step_two" />
@@ -56,7 +53,6 @@
         android:id="@+id/image_step_four"
         style="@style/image_step_number"
         android:contentDescription="@string/step_image_description"
-        android:src="@drawable/four_active"
         app:layout_constraintEnd_toEndOf="@id/bookmark_image"
         app:layout_constraintStart_toStartOf="@id/bookmark_image"
         app:layout_constraintTop_toBottomOf="@id/image_step_three" />
@@ -119,8 +115,7 @@
         style="@style/button_arrow_image_left"
         app:layout_constraintStart_toStartOf="@+id/viewFlipper"
         app:layout_constraintTop_toTopOf="@+id/barrier"
-        android:contentDescription="@string/arrow_image_button"
-        android:onClick="moveBack"/>
+        android:contentDescription="@string/arrow_image_button" />
 
     <ImageButton
         android:id="@+id/image_arrow_right"
@@ -128,7 +123,6 @@
         style="@style/button_arrow_image_right"
         app:layout_constraintEnd_toEndOf="@+id/viewFlipper"
         app:layout_constraintTop_toTopOf="@+id/barrier"
-        android:contentDescription="@string/arrow_image_button"
-        android:onClick="moveNext"/>
+        android:contentDescription="@string/arrow_image_button" />
 
 </android.support.constraint.ConstraintLayout>
