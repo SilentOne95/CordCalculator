@@ -20,7 +20,7 @@
         android:text="@string/first_step_first_answer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/first_step"
-        app:buttonTint="@color/defaultBlack"/>
+        app:buttonTint="@color/defaultBlack" />
 
     <android.support.v7.widget.AppCompatCheckBox
         android:id="@+id/first_step_second_answer"
@@ -28,7 +28,7 @@
         android:text="@string/first_step_second_answer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/first_step_first_answer"
-        app:buttonTint="@color/defaultBlack"/>
+        app:buttonTint="@color/defaultBlack" />
 
     <android.support.v7.widget.AppCompatCheckBox
         android:id="@+id/first_step_third_answer"
@@ -36,7 +36,7 @@
         android:text="@string/first_step_third_answer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/first_step_second_answer"
-        app:buttonTint="@color/defaultBlack"/>
+        app:buttonTint="@color/defaultBlack" />
 
     <android.support.v7.widget.AppCompatCheckBox
         android:id="@+id/first_step_fourth_answer"
@@ -44,7 +44,7 @@
         android:text="@string/first_step_fourth_answer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/first_step_third_answer"
-        app:buttonTint="@color/defaultBlack"/>
+        app:buttonTint="@color/defaultBlack" />
 
     <android.support.v7.widget.AppCompatCheckBox
         android:id="@+id/first_step_fifth_answer"
@@ -52,6 +52,6 @@
         android:text="@string/first_step_fifth_answer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/first_step_fourth_answer"
-        app:buttonTint="@color/defaultBlack"/>
+        app:buttonTint="@color/defaultBlack" />
 
 </android.support.constraint.ConstraintLayout>

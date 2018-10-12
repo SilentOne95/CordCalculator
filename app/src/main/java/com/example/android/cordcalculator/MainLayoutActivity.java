@@ -1,12 +1,8 @@
 package com.example.android.cordcalculator;
 
-import android.content.Intent;
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
@@ -40,34 +36,19 @@ public class MainLayoutActivity extends AppCompatActivity {
         stepFourImage.setImageResource(R.drawable.four_inactive);
 
         // Listener for changing views in ViewFlipper
-        moveNextButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                nextView(v);
-            }
-        });
-
         moveBackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 previousView(v);
             }
         });
-    }
 
-    // Store logic of button's functionality (right arrow)
-    public void nextView(View v) {
-        vf.setInAnimation(this, android.R.anim.slide_in_left);
-        vf.setOutAnimation(this, android.R.anim.slide_out_right);
-        vf.showNext();
-
-        // Checks if button is redundant
-        moveBackButton.setVisibility(View.VISIBLE);
-
-        if (vf.getDisplayedChild() == 3)
-            moveNextButton.setVisibility(View.GONE);
-
-        switchStepImage(vf.getDisplayedChild());
+        moveNextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nextView(v);
+            }
+        });
     }
 
     // Store logic of button's functionality (left arrow)
@@ -81,6 +62,21 @@ public class MainLayoutActivity extends AppCompatActivity {
             moveBackButton.setVisibility(View.GONE);
         else if (vf.getDisplayedChild() == 2)
             moveNextButton.setVisibility(View.VISIBLE);
+
+        switchStepImage(vf.getDisplayedChild());
+    }
+
+    // Store logic of button's functionality (right arrow)
+    public void nextView(View v) {
+        vf.setInAnimation(this, android.R.anim.slide_in_left);
+        vf.setOutAnimation(this, android.R.anim.slide_out_right);
+        vf.showNext();
+
+        // Checks if button is redundant
+        moveBackButton.setVisibility(View.VISIBLE);
+
+        if (vf.getDisplayedChild() == 3)
+            moveNextButton.setVisibility(View.GONE);
 
         switchStepImage(vf.getDisplayedChild());
     }
