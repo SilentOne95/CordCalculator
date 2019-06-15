@@ -1,13 +1,15 @@
-package com.example.android.cordcalculator;
+package com.bobbiny.cordcalculator;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ThirdQuestion extends AppCompatActivity {
+import com.android.cordcalculator.R;
+
+public class FourthQuestion extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_third_question);
+        setContentView(R.layout.activity_fourth_question);
     }
 }

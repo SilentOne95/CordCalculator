@@ -1,10 +1,11 @@
-package com.example.android.cordcalculator;
+package com.bobbiny.cordcalculator;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
+
+import com.android.cordcalculator.R;
 
 public class FirstQuestion extends AppCompatActivity implements View.OnClickListener {
 

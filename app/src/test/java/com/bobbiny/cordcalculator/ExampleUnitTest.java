@@ -1,4 +1,4 @@
-package com.example.android.cordcalculator;
+package com.bobbiny.cordcalculator;
 
 import org.junit.Test;
 

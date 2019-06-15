@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    tools:context=".FourthQuestion">
+    tools:context="com.bobbiny.cordcalculator.FourthQuestion">
 
     <TextView
         android:id="@+id/fourth_step"

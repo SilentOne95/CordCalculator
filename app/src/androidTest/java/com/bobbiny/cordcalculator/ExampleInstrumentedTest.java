@@ -1,4 +1,4 @@
-package com.example.android.cordcalculator;
+package com.bobbiny.cordcalculator;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.android.cordcalculator", appContext.getPackageName());
+        assertEquals("com.android.cordcalculator", appContext.getPackageName());
     }
 }

@@ -1,22 +1,30 @@
-package com.example.android.cordcalculator;
+package com.bobbiny.cordcalculator.main;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
-public class MainLayoutActivity extends AppCompatActivity {
+import com.android.cordcalculator.R;
+import com.bobbiny.cordcalculator.base.BaseActivity;
+
+public class MainActivity extends BaseActivity {
 
     private ViewFlipper vf;
     ImageButton moveBackButton, moveNextButton;
     ImageView stepOneImage, stepTwoImage, stepThreeImage, stepFourImage;
 
+
+    @Override
+    protected int getLayout() {
+        return R.layout.activity_main;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_layout);
+        setContentView(R.layout.activity_main);
 
         // Get references
         // Re-usable layouts
@@ -50,6 +58,7 @@ public class MainLayoutActivity extends AppCompatActivity {
             }
         });
     }
+
 
     // Store logic of button's functionality (left arrow)
     public void previousView(View v) {
