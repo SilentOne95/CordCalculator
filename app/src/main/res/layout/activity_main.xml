@@ -1,128 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
+    android:orientation="horizontal"
     tools:context="com.bobbiny.cordcalculator.main.MainActivity">
 
-    <View
-        android:id="@+id/dashed_line"
-        style="@style/vertical_dashed_line"
-        android:background="@color/defaultBlack"
-        app:layout_constraintBottom_toBottomOf="@id/image_step_four"
-        app:layout_constraintEnd_toEndOf="@id/bookmark_image"
-        app:layout_constraintStart_toStartOf="@id/bookmark_image"
-        app:layout_constraintTop_toTopOf="@id/bookmark_image" />
-
-    <ImageView
-        android:id="@+id/bookmark_image"
-        style="@style/bookmark_image"
-        android:layout_marginStart="8dp"
-        android:contentDescription="@string/bookmark_image_description"
-        android:src="@drawable/bookmark"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/image_step_one"
-        style="@style/image_step_number"
-        android:contentDescription="@string/step_image_description"
-        app:layout_constraintEnd_toEndOf="@id/bookmark_image"
-        app:layout_constraintStart_toStartOf="@id/bookmark_image"
-        app:layout_constraintTop_toBottomOf="@id/bookmark_image" />
-
-    <ImageView
-        android:id="@+id/image_step_two"
-        style="@style/image_step_number"
-        android:contentDescription="@string/step_image_description"
-        app:layout_constraintEnd_toEndOf="@id/bookmark_image"
-        app:layout_constraintStart_toStartOf="@id/bookmark_image"
-        app:layout_constraintTop_toBottomOf="@id/image_step_one" />
-
-    <ImageView
-        android:id="@+id/image_step_three"
-        style="@style/image_step_number"
-        android:contentDescription="@string/step_image_description"
-        app:layout_constraintEnd_toEndOf="@id/bookmark_image"
-        app:layout_constraintStart_toStartOf="@id/bookmark_image"
-        app:layout_constraintTop_toBottomOf="@id/image_step_two" />
-
-    <ImageView
-        android:id="@+id/image_step_four"
-        style="@style/image_step_number"
-        android:contentDescription="@string/step_image_description"
-        app:layout_constraintEnd_toEndOf="@id/bookmark_image"
-        app:layout_constraintStart_toStartOf="@id/bookmark_image"
-        app:layout_constraintTop_toBottomOf="@id/image_step_three" />
-
-    <TextView
-        android:id="@+id/calculator_text_view"
-        style="@style/calculator_text_view"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintVertical_bias="0.15" />
-
-    <View
-        android:id="@+id/underline_view"
-        style="@style/underline_view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/calculator_text_view"
-        app:layout_constraintTop_toBottomOf="@id/calculator_text_view" />
-
-    <ViewFlipper
-        android:id="@+id/viewFlipper"
-        style="@style/view_flipper"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/underline_view"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintVertical_bias="0.1">
-
-        <include
-            android:id="@+id/include_first_step"
-            layout="@layout/activity_first_question" />
-
-        <include
-            android:id="@+id/include_second_step"
-            layout="@layout/activity_second_question" />
-
-        <include
-            android:id="@+id/include_third_step"
-            layout="@layout/activity_third_question" />
-
-        <include
-            android:id="@+id/include_fourth_step"
-            layout="@layout/activity_fourth_question" />
-
-    </ViewFlipper>
-
-    <android.support.constraint.Barrier
-        android:id="@+id/barrier"
+    <android.support.constraint.ConstraintLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="bottom"
-        app:constraint_referenced_ids="image_step_four,viewFlipper" />
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/small_value"
+        android:paddingEnd="@dimen/small_value">
 
-    <ImageButton
-        android:id="@+id/image_arrow_left"
-        app:srcCompat="@drawable/arrow_left"
-        style="@style/button_arrow_image_left"
-        app:layout_constraintStart_toStartOf="@+id/viewFlipper"
-        app:layout_constraintTop_toTopOf="@+id/barrier"
-        android:contentDescription="@string/arrow_image_button" />
+        <View
+            android:id="@+id/dashed_line"
+            android:layout_width="@dimen/dashed_line_width"
+            android:layout_height="@dimen/zero_value"
+            android:layout_marginBottom="@dimen/dashed_line_margin_bottom"
+            android:background="@color/colorBlack"
+            app:layout_constraintBottom_toBottomOf="@id/image_step_four"
+            app:layout_constraintEnd_toEndOf="@id/bookmark_image"
+            app:layout_constraintStart_toStartOf="@id/bookmark_image"
+            app:layout_constraintTop_toTopOf="@id/bookmark_image" />
 
-    <ImageButton
-        android:id="@+id/image_arrow_right"
-        app:srcCompat="@drawable/arrow_right"
-        style="@style/button_arrow_image_right"
-        app:layout_constraintEnd_toEndOf="@+id/viewFlipper"
-        app:layout_constraintTop_toTopOf="@+id/barrier"
-        android:contentDescription="@string/arrow_image_button" />
+        <ImageView
+            android:id="@+id/bookmark_image"
+            android:layout_width="@dimen/bookmark_image_width"
+            android:layout_height="@dimen/bookmark_image_height"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/bookmark_image_description"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bookmark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:id="@+id/image_step_one"
+            style="@style/image_step_number"
+            android:contentDescription="@string/step_image_description"
+            app:layout_constraintEnd_toEndOf="@id/bookmark_image"
+            app:layout_constraintStart_toStartOf="@id/bookmark_image"
+            app:layout_constraintTop_toBottomOf="@id/bookmark_image" />
+
+        <ImageView
+            android:id="@+id/image_step_two"
+            style="@style/image_step_number"
+            android:contentDescription="@string/step_image_description"
+            app:layout_constraintEnd_toEndOf="@id/bookmark_image"
+            app:layout_constraintStart_toStartOf="@id/bookmark_image"
+            app:layout_constraintTop_toBottomOf="@id/image_step_one" />
+
+        <ImageView
+            android:id="@+id/image_step_three"
+            style="@style/image_step_number"
+            android:contentDescription="@string/step_image_description"
+            app:layout_constraintEnd_toEndOf="@id/bookmark_image"
+            app:layout_constraintStart_toStartOf="@id/bookmark_image"
+            app:layout_constraintTop_toBottomOf="@id/image_step_two" />
+
+        <ImageView
+            android:id="@+id/image_step_four"
+            style="@style/image_step_number"
+            android:contentDescription="@string/step_image_description"
+            app:layout_constraintEnd_toEndOf="@id/bookmark_image"
+            app:layout_constraintStart_toStartOf="@id/bookmark_image"
+            app:layout_constraintTop_toBottomOf="@id/image_step_three" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/calculator_text_view"
+            style="@style/basicTextStyle"
+            android:layout_marginStart="8dp"
+            android:text="@string/calculator_string"
+            android:textSize="@dimen/calculator_text_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.15" />
+
+        <View
+            android:id="@+id/underline_view"
+            android:layout_width="@dimen/zero_value"
+            android:layout_height="@dimen/underline_view_height"
+            android:layout_marginTop="@dimen/small_value"
+            android:background="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/calculator_text_view"
+            app:layout_constraintTop_toBottomOf="@id/calculator_text_view" />
+
+        <FrameLayout
+            android:id="@+id/switch_view_layout"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/small_value"
+            android:layout_marginEnd="@dimen/small_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/calculator_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/underline_view" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
+

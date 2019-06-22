@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- First screen of the app -->
-    <dimen name="welcome_text_size">48dp</dimen>
+    <!-- General values -->
+    <dimen name="rounded_button_drawable_padding">12dp</dimen>
+    <dimen name="rounded_button_drawable_radius">25dp</dimen>
+    <!-- Spacing -->
+    <dimen name="zero_value">0dp</dimen>
+    <dimen name="small_value">8dp</dimen>
+    <dimen name="mid_value">16dp</dimen>
 
-    <!-- Logo image "Bobbiny" -->
-    <dimen name="width_logo_bobbiny">250dp</dimen>
-    <dimen name="height_logo_bobbiny">150dp</dimen>
-
-    <!-- Company's motto, string "calculator" -->
+    <!-- Text size -->
+    <dimen name="welcome_text_size">48sp</dimen>
     <dimen name="regular_text_size">24sp</dimen>
 
-    <!-- "Start" button -->
-    <dimen name="start_button_padding">12dp</dimen>
-    <dimen name="start_button_padding_left_right">26dp</dimen>
-    <dimen name="start_button_radius_corners">25dp</dimen>
+    <!-- "Welcome" screen -->
+    <dimen name="welcome_logo_width">250dp</dimen>
+    <dimen name="welcome_logo_height">150dp</dimen>
+
+    <dimen name="start_button_padding_vertical">26dp</dimen>
+
     <dimen name="start_button_text_size">20sp</dimen>
 
-    <!-- Main Layout -->
-    <!-- Progress bar - main screen -->
+    <!-- Main Activity screen -->
     <dimen name="bookmark_image_width">130dp</dimen>
     <dimen name="bookmark_image_height">120dp</dimen>
     <dimen name="bookmark_image_margin">18dp</dimen>
@@ -26,22 +29,15 @@
     <dimen name="step_image_size">50dp</dimen>
     <dimen name="step_image_margin_top">32dp</dimen>
 
-    <!-- Calculator string and view (line) below -->
     <dimen name="calculator_text_size">34sp</dimen>
     <dimen name="calculator_padding_left">20dp</dimen>
     <dimen name="underline_view_height">3dp</dimen>
 
-    <!-- Questions and answers - ViewFlipper -->
     <dimen name="view_flipper_width">190dp</dimen>
     <dimen name="question_text_size">24dp</dimen>
     <dimen name="checkbox_text_size">20dp</dimen>
 
-    <!-- Arrow buttons (left, right) -->
     <dimen name="arrow_image_size">40dp</dimen>
     <dimen name="arrow_button_margin_top">48dp</dimen>
 
-    <!-- General values -->
-    <dimen name="zero_value">0dp</dimen>
-    <dimen name="small_value">8dp</dimen>
-    <dimen name="mid_value">16dp</dimen>
 </resources>

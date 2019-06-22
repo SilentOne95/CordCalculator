@@ -9,6 +9,5 @@ public interface BaseFragmentContract {
 
     interface Presenter {
 
-        void getSelectedLayoutType(String itemType, String data);
     }
 }

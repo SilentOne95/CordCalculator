@@ -20,18 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.bobbiny.cordcalculator.StartingScreenActivity" />
+        <activity android:name="com.bobbiny.cordcalculator.welcome.WelcomeScreenActivity" />
         <activity
             android:name="com.bobbiny.cordcalculator.main.MainActivity"
             android:label="main_layout" />
-        <activity android:name="com.bobbiny.cordcalculator.FirstQuestion" />
-        <activity android:name="com.bobbiny.cordcalculator.SecondQuestion" />
-        <activity android:name="com.bobbiny.cordcalculator.ThirdQuestion" />
-        <activity android:name="com.bobbiny.cordcalculator.FourthQuestion" />
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

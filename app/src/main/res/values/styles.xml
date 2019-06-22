@@ -1,121 +1,4 @@
 <resources>
-    <!-- Launch screen theme. -->
-    <style name="AppTheme.Launcher" parent="Theme.AppCompat.NoActionBar">
-        <item name="android:windowBackground">@drawable/launch_layout_screen</item>
-    </style>
-
-    <!-- Basic style for the app -->
-    <style name="basicTextStyle">
-        <item name="android:textColor">@color/defaultBlack</item>
-        <item name="android:fontFamily">@font/lato</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-    </style>
-
-    <style name="defaultButtonStyle">
-        <item name="android:background">@drawable/button_rounded_corners</item>
-        <item name="android:textColor">@color/defaultWhite</item>
-        <item name="android:textSize">@dimen/start_button_text_size</item>
-        <item name="android:fontFamily">@font/lato</item>
-    </style>
-
-    <!-- First screen of the app -->
-    <style name="welcome_text_view" parent="basicTextStyle">
-        <item name="android:textSize">@dimen/welcome_text_size</item>
-    </style>
-
-    <style name="full_logo_image_view">
-        <item name="android:layout_width">@dimen/width_logo_bobbiny</item>
-        <item name="android:layout_height">@dimen/height_logo_bobbiny</item>
-        <item name="android:scaleType">fitCenter</item>
-        <item name="android:contentDescription">@string/full_logo_description</item>
-    </style>
-
-    <style name="motto_text_view" parent="basicTextStyle">
-        <item name="android:textSize">@dimen/regular_text_size</item>
-    </style>
-
-    <style name="button_start" parent="defaultButtonStyle">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingStart">@dimen/start_button_padding_left_right</item>
-        <item name="android:paddingEnd">@dimen/start_button_padding_left_right</item>
-    </style>
-
-    <!-- Main screen of the app -->
-    <!-- Progress bar -->
-    <style name="vertical_dashed_line">
-        <item name="android:layout_width">@dimen/dashed_line_width</item>
-        <item name="android:layout_height">@dimen/zero_value</item>
-        <item name="android:layout_marginBottom">@dimen/dashed_line_margin_bottom</item>
-    </style>
-
-    <style name="bookmark_image">
-        <item name="android:layout_width">@dimen/bookmark_image_width</item>
-        <item name="android:layout_height">@dimen/bookmark_image_height</item>
-        <item name="android:layout_marginStart">@dimen/bookmark_image_margin</item>
-        <item name="android:scaleType">fitCenter</item>
-    </style>
-
-    <style name="image_step_number">
-        <item name="android:layout_width">@dimen/step_image_size</item>
-        <item name="android:layout_height">@dimen/step_image_size</item>
-        <item name="android:layout_marginTop">@dimen/step_image_margin_top</item>
-    </style>
-
-    <!-- Calculator string, view (line) below and ViewFlipper -->
-    <style name="calculator_text_view" parent="basicTextStyle">
-        <item name="android:text">@string/calculator_string</item>
-        <item name="android:textSize">@dimen/calculator_text_size</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:paddingStart">@dimen/calculator_padding_left</item>
-    </style>
-
-    <style name="underline_view">
-        <item name="android:layout_width">@dimen/zero_value</item>
-        <item name="android:layout_height">@dimen/underline_view_height</item>
-        <item name="android:layout_marginTop">@dimen/small_value</item>
-        <item name="android:background">@color/defaultBlack</item>
-    </style>
-
-    <style name="view_flipper">
-        <item name="android:layout_width">@dimen/view_flipper_width</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">@dimen/small_value</item>
-        <item name="android:layout_marginBottom">@dimen/small_value</item>
-    </style>
-
-    <!-- First question activity -->
-    <style name="question_text_view" parent="basicTextStyle">
-        <item name="android:layout_marginStart">@dimen/small_value</item>
-        <item name="android:layout_marginTop">@dimen/small_value</item>
-        <item name="android:layout_marginBottom">@dimen/small_value</item>
-        <item name="android:textSize">@dimen/question_text_size</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-    
-    <style name="answer_checkbox" parent="basicTextStyle">
-        <item name="android:layout_marginStart">@dimen/mid_value</item>
-        <item name="android:layout_marginTop">@dimen/small_value</item>
-        <item name="android:textSize">@dimen/checkbox_text_size</item>
-    </style>
-
-    <!-- ImageButtons below View Flipper (arrows) -->
-    <style name="button_arrow_image">
-        <item name="android:layout_width">@dimen/arrow_image_size</item>
-        <item name="android:layout_height">@dimen/arrow_image_size</item>
-        <item name="android:layout_marginTop">@dimen/arrow_button_margin_top</item>
-        <item name="android:background">@null</item>
-    </style>
-
-    <style name="button_arrow_image_left" parent="button_arrow_image">
-        <item name="android:layout_marginStart">@dimen/small_value</item>
-    </style>
-
-    <style name="button_arrow_image_right" parent="button_arrow_image">
-        <item name="android:layout_marginEnd">@dimen/small_value</item>
-    </style>
-
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
@@ -123,4 +6,32 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <!-- Launch screen theme. -->
+    <style name="AppTheme.Launcher" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/launch_layout_screen</item>
+    </style>
+
+    <!-- Basic style -->
+    <style name="basicTextStyle">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="defaultButtonStyle">
+        <item name="android:background">@drawable/button_rounded_corners</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/start_button_text_size</item>
+        <item name="android:fontFamily">@font/lato</item>
+    </style>
+
+    <!-- Main screen of the app -->
+    <style name="image_step_number">
+        <item name="android:layout_width">@dimen/step_image_size</item>
+        <item name="android:layout_height">@dimen/step_image_size</item>
+        <item name="android:layout_marginTop">@dimen/step_image_margin_top</item>
+    </style>
+
 </resources>

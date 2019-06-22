@@ -4,44 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.bobbiny.cordcalculator.StartingScreenActivity"
-    android:background="@drawable/gradient_background">
+    android:background="@drawable/gradient_background"
+    tools:context="com.bobbiny.cordcalculator.welcome.WelcomeScreenActivity">
 
     <TextView
         android:id="@+id/welcome_text_view"
+        style="@style/basicTextStyle"
+        android:fontFamily="@font/lato"
         android:text="@string/welcome_text"
-        app:layout_constraintBottom_toTopOf="@id/full_logo"
+        android:textSize="@dimen/welcome_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/full_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        style="@style/welcome_text_view" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/full_logo"
+        android:layout_width="@dimen/welcome_logo_width"
+        android:layout_height="@dimen/welcome_logo_height"
+        android:contentDescription="@string/full_logo_description"
+        android:scaleType="fitCenter"
         android:src="@drawable/bobbiny_full_logo"
         app:layout_constraintBottom_toTopOf="@+id/motto_text_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/welcome_text_view"
-        style="@style/full_logo_image_view" />
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text_view" />
 
     <TextView
         android:id="@+id/motto_text_view"
+        style="@style/basicTextStyle"
         android:text="@string/motto_text"
+        android:textSize="@dimen/regular_text_size"
         app:layout_constraintBottom_toTopOf="@+id/button_start"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/full_logo"
-        style="@style/motto_text_view"/>
+        app:layout_constraintTop_toBottomOf="@+id/full_logo" />
 
     <Button
         android:id="@+id/button_start"
+        style="@style/defaultButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startProcess"
+        android:paddingStart="@dimen/start_button_padding_vertical"
+        android:paddingEnd="@dimen/start_button_padding_vertical"
         android:text="@string/start_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/motto_text_view"
-        style="@style/button_start"
-        android:onClick="startProcess"/>
+        app:layout_constraintTop_toBottomOf="@+id/motto_text_view" />
 
 </android.support.constraint.ConstraintLayout>

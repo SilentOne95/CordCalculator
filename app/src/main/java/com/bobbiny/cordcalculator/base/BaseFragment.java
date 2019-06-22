@@ -10,16 +10,13 @@ import android.view.ViewGroup;
 
 public abstract class BaseFragment extends Fragment implements BaseFragmentContract.View{
 
-    protected View rootView;
     protected BaseFragmentContract.Presenter navigationPresenter;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        rootView = inflater.inflate(getLayout(), container, false);
-
-        return rootView;
+        return inflater.inflate(getLayout(), container, false);
     }
 
     protected abstract int getLayout();
