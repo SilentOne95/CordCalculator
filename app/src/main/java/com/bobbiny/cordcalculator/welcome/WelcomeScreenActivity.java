@@ -1,9 +1,10 @@
 package com.bobbiny.cordcalculator.welcome;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.cordcalculator.R;
 import com.bobbiny.cordcalculator.main.MainActivity;

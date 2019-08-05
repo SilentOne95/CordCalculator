@@ -1,11 +1,8 @@
 package com.bobbiny.cordcalculator.main;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
-import com.bobbiny.cordcalculator.base.BaseFragmentContract;
-
-public class MainActivityPresenter implements MainActivityContract.Presenter,
-        BaseFragmentContract.Presenter {
+public class MainActivityPresenter implements MainActivityContract.Presenter {
 
     private static final String TAG = MainActivityPresenter.class.getSimpleName();
 
