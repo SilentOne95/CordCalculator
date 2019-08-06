@@ -4,7 +4,6 @@ public interface MainActivityContract {
 
     interface View {
 
-        void initViews();
     }
 
     interface Presenter {

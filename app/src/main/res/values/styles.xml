@@ -5,6 +5,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
     </style>
 
     <!-- Launch screen theme. -->
@@ -25,6 +26,12 @@
         <item name="android:textColor">@color/colorWhite</item>
         <item name="android:textSize">@dimen/start_button_text_size</item>
         <item name="android:fontFamily">@font/lato</item>
+    </style>
+
+    <style name="checkboxStyle">
+        <item name="android:layout_marginStart">@dimen/mid_value</item>
+        <item name="android:textSize">@dimen/regular_text_size</item>
+        <item name="android:textColor">@color/colorBlack</item>
     </style>
 
     <!-- Main screen of the app -->

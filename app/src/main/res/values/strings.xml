@@ -9,26 +9,27 @@
     <!-- ViewFlipper - Steps and answers -->
     <string name="calculator_string">Calculator</string>
 
-    <string name="first_step">1. I want to knit:</string>
-    <string name="first_step_first_answer">Rectangular rug</string>
-    <string name="first_step_second_answer">Circular rug</string>
-    <string name="first_step_third_answer">Basket</string>
-    <string name="first_step_fourth_answer">Pillow</string>
-    <string name="first_step_fifth_answer">Pouf</string>
+    <string name="first_step_text">1. I want to knit:</string>
+    <string name="first_step_first_answer_text">Rectangular rug</string>
+    <string name="first_step_second_answer_text">Circular rug</string>
+    <string name="first_step_third_answer_text">Basket</string>
+    <string name="first_step_fourth_answer_text">Pillow</string>
+    <string name="first_step_fifth_answer_text">Pouf</string>
 
-    <string name="second_step">2. I want to use:</string>
-    <string name="second_step_first_answer">Junior - 3mm</string>
-    <string name="second_step_second_answer">Premium - 5mm</string>
-    <string name="second_step_third_answer">Jumbo - 9mm</string>
-    <string name="second_step_fourth_answer">T-shirt yarn</string>
+    <string name="second_step_text">2. I want to use:</string>
+    <string name="second_step_first_answer_text">Junior - 3mm</string>
+    <string name="second_step_second_answer_text">Premium - 5mm</string>
+    <string name="second_step_third_answer_text">Jumbo - 9mm</string>
+    <string name="second_step_fourth_answer_text">T-shirt yarn</string>
 
-    <string name="third_step">3. Measurements:</string>
+    <string name="third_step_text">3. Measurements:</string>
 
-    <string name="fourth_step">4. What I need:</string>
+    <string name="fourth_step_text">4. What I need:</string>
 
     <!-- Image description -->
     <string name="full_logo_description">Full logo of the company.</string>
     <string name="step_image_description">Showing actual step.</string>
     <string name="bookmark_image_description">Bookmark with logo.</string>
     <string name="arrow_image_button">Button to switch step.</string>
+
 </resources>

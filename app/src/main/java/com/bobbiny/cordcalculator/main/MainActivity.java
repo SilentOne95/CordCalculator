@@ -1,33 +1,31 @@
 package com.bobbiny.cordcalculator.main;
 
 import android.os.Bundle;
-import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import com.android.cordcalculator.R;
+import com.android.cordcalculator.databinding.ActivityMainBinding;
+import com.bobbiny.cordcalculator.utils.Handler;
 
 public class MainActivity extends AppCompatActivity implements MainActivityContract.View {
 
-    private MainActivityPresenter presenter;
-
-    ImageView stepOneImage, stepTwoImage, stepThreeImage, stepFourImage;
+    private MainActivityPresenter mPresenter;
+    private ActivityMainBinding mBinding;
+    private NavController mNavController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        mBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        mNavController = Navigation.findNavController(this, R.id.nav_host_fragment);
 
-        initViews();
+        mPresenter = new MainActivityPresenter(this, mNavController);
 
-        presenter = new MainActivityPresenter(this);
-    }
-
-    @Override
-    public void initViews() {
-        stepOneImage = findViewById(R.id.image_step_one);
-        stepTwoImage = findViewById(R.id.image_step_two);
-        stepThreeImage = findViewById(R.id.image_step_three);
-        stepFourImage = findViewById(R.id.image_step_four);
+        mBinding.setNavController(mNavController);
+        mBinding.setHandler(new Handler());
     }
 }

@@ -8,70 +8,50 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="firstQuestionFragment">
+                  <entry key="firstStepFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="189" />
-                            <option name="y" value="353" />
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
                           </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="firstQuestion_to_secondQuestion">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="secondQuestionFragment">
+                  <entry key="fourthStepFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="483" />
-                            <option name="y" value="353" />
+                            <option name="x" value="744" />
+                            <option name="y" value="9" />
                           </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="secondQuestion_to_firstQuestion">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="secondQuestion_to_thirdQuestion">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="thirdQuestionFragment">
+                  <entry key="secondStepFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="779" />
-                            <option name="y" value="353" />
+                            <option name="x" value="256" />
+                            <option name="y" value="12" />
                           </Point>
                         </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="thirdQuestion_to_secondQuestion">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="thirdStepFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="500" />
+                            <option name="y" value="12" />
+                          </Point>
                         </option>
                       </LayoutPositions>
                     </value>

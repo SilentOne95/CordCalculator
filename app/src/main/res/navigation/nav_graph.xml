@@ -3,52 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/firstQuestionFragment">
+    app:startDestination="@id/firstStepFragment">
 
     <fragment
-        android:id="@+id/firstQuestionFragment"
-        android:name="com.bobbiny.cordcalculator.questionFragments.first.FirstQuestionFragment"
-        tools:layout="@layout/fragment_first_question">
-        <action
-            android:id="@+id/firstQuestion_to_secondQuestion"
-            app:destination="@id/secondQuestionFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_right"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_left" />
-    </fragment>
+        android:id="@+id/firstStepFragment"
+        android:name="com.bobbiny.cordcalculator.stepFragments.first.FirstStepFragment"
+        tools:layout="@layout/fragment_first_step" />
 
     <fragment
-        android:id="@+id/secondQuestionFragment"
-        android:name="com.bobbiny.cordcalculator.questionFragments.second.SecondQuestionFragment"
-        tools:layout="@layout/fragment_second_question">
-        <action
-            android:id="@+id/secondQuestion_to_thirdQuestion"
-            app:destination="@id/thirdQuestionFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_right"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_left" />
-        <action
-            android:id="@+id/secondQuestion_to_firstQuestion"
-            app:destination="@id/firstQuestionFragment"
-            app:enterAnim="@anim/slide_in_left"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_left" />
-    </fragment>
+        android:id="@+id/secondStepFragment"
+        android:name="com.bobbiny.cordcalculator.stepFragments.second.SecondStepFragment"
+        tools:layout="@layout/fragment_second_step" />
 
     <fragment
-        android:id="@+id/thirdQuestionFragment"
-        android:name="com.bobbiny.cordcalculator.questionFragments.third.ThirdQuestionFragment"
-        tools:layout="@layout/fragment_third_question">
-        <action
-            android:id="@+id/thirdQuestion_to_secondQuestion"
-            app:destination="@id/secondQuestionFragment"
-            app:enterAnim="@anim/slide_in_left"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_out_right" />
-    </fragment>
+        android:id="@+id/thirdStepFragment"
+        android:name="com.bobbiny.cordcalculator.stepFragments.third.ThirdStepFragment"
+        tools:layout="@layout/fragment_third_step" />
+
+    <fragment
+        android:id="@+id/fourthStepFragment"
+        android:name="com.bobbiny.cordcalculator.stepFragments.fourth.FourthStepFragment"
+        tools:layout="@layout/fragment_fourth_step" />
 
 </navigation>
