@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.bobbiny.cordcalculator.stepFragments.third.ThirdStepFragment">
+    tools:context="com.bobbiny.cordcalculator.nestedNavHost.thirdFragment.ThirdStepFragment">
 
     <TextView
         android:id="@+id/textView"

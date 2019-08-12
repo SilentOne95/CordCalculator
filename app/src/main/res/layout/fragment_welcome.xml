@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
-    tools:context="com.bobbiny.cordcalculator.welcome.WelcomeScreenActivity">
+    tools:context="com.bobbiny.cordcalculator.mainNavHost.fragments.WelcomeFragment">
 
     <TextView
         android:id="@+id/welcome_text_view"
@@ -45,7 +45,6 @@
         style="@style/defaultButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="startProcess"
         android:paddingStart="@dimen/start_button_padding_vertical"
         android:paddingEnd="@dimen/start_button_padding_vertical"
         android:text="@string/start_button"

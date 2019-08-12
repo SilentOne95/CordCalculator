@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_nested"
+    app:startDestination="@id/firstStepFragment">
+
+    <fragment
+        android:id="@+id/firstStepFragment"
+        android:name="com.bobbiny.cordcalculator.nestedNavHost.firstFragment.FirstStepFragment"
+        tools:layout="@layout/fragment_first_step" />
+
+    <fragment
+        android:id="@+id/secondStepFragment"
+        android:name="com.bobbiny.cordcalculator.nestedNavHost.secondFragment.SecondStepFragment"
+        tools:layout="@layout/fragment_second_step" />
+
+    <fragment
+        android:id="@+id/thirdStepFragment"
+        android:name="com.bobbiny.cordcalculator.nestedNavHost.thirdFragment.ThirdStepFragment"
+        tools:layout="@layout/fragment_third_step" />
+
+    <fragment
+        android:id="@+id/fourthStepFragment"
+        android:name="com.bobbiny.cordcalculator.nestedNavHost.fourthFragment.FourthStepFragment"
+        tools:layout="@layout/fragment_fourth_step" />
+</navigation>

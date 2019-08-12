@@ -3,26 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/firstStepFragment">
+    app:startDestination="@id/welcomeFragment">
 
     <fragment
-        android:id="@+id/firstStepFragment"
-        android:name="com.bobbiny.cordcalculator.stepFragments.first.FirstStepFragment"
-        tools:layout="@layout/fragment_first_step" />
+        android:id="@+id/welcomeFragment"
+        android:name="com.bobbiny.cordcalculator.mainNavHost.fragments.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome">
+
+        <action
+            android:id="@+id/welcome_to_main"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@+id/welcomeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 
     <fragment
-        android:id="@+id/secondStepFragment"
-        android:name="com.bobbiny.cordcalculator.stepFragments.second.SecondStepFragment"
-        tools:layout="@layout/fragment_second_step" />
-
-    <fragment
-        android:id="@+id/thirdStepFragment"
-        android:name="com.bobbiny.cordcalculator.stepFragments.third.ThirdStepFragment"
-        tools:layout="@layout/fragment_third_step" />
-
-    <fragment
-        android:id="@+id/fourthStepFragment"
-        android:name="com.bobbiny.cordcalculator.stepFragments.fourth.FourthStepFragment"
-        tools:layout="@layout/fragment_fourth_step" />
+        android:id="@+id/mainFragment"
+        android:name="com.bobbiny.cordcalculator.mainNavHost.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
 
 </navigation>

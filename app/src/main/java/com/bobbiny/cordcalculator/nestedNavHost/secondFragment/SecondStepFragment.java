@@ -1,4 +1,4 @@
-package com.bobbiny.cordcalculator.stepFragments.third;
+package com.bobbiny.cordcalculator.nestedNavHost.secondFragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,16 +11,16 @@ import androidx.fragment.app.Fragment;
 
 import com.android.cordcalculator.R;
 
-public class ThirdStepFragment extends Fragment {
+public class SecondStepFragment extends Fragment {
 
-    public ThirdStepFragment() {
+    public SecondStepFragment() {
         // Required empty public constructor
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_third_step, container, false);
+        return inflater.inflate(R.layout.fragment_second_step, container, false);
     }
 
     @Override

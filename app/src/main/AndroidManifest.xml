@@ -7,11 +7,12 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
         android:screenOrientation="portrait"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name="com.bobbiny.cordcalculator.launch.LaunchActivity"
+        <activity
+            android:name="com.bobbiny.cordcalculator.launchActivity.LaunchActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Launcher">
             <intent-filter>
@@ -20,9 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.bobbiny.cordcalculator.welcome.WelcomeScreenActivity" />
         <activity
-            android:name="com.bobbiny.cordcalculator.main.MainActivity"
+            android:name="com.bobbiny.cordcalculator.mainNavHost.MainActivity"
             android:label="main_layout" />
     </application>
 
