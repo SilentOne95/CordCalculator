@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
-    tools:context="com.bobbiny.cordcalculator.mainNavHost.fragments.WelcomeFragment">
+    tools:context="com.bobbiny.cordcalculator.mainNavHost.welcomeFragment.welcomeFragment.WelcomeFragment">
 
     <TextView
         android:id="@+id/welcome_text_view"

@@ -1,4 +1,4 @@
-package com.bobbiny.cordcalculator.mainNavHost.fragments;
+package com.bobbiny.cordcalculator.mainNavHost.mainFragment;
 
 import android.os.Bundle;
 
@@ -15,10 +15,10 @@ import android.view.ViewGroup;
 
 import com.android.cordcalculator.R;
 import com.android.cordcalculator.databinding.FragmentMainBinding;
-import com.bobbiny.cordcalculator.utils.Handler;
 
-public class MainFragment extends Fragment {
+public class MainFragment extends Fragment implements MainFragmentContract.View{
 
+    private MainFragmentPresenter mPresenter;
     private FragmentMainBinding mBinding;
     private NavController mNavController;
 
@@ -37,7 +37,8 @@ public class MainFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        mPresenter = new MainFragmentPresenter(this);
+        mBinding.setPresenter(mPresenter);
         mBinding.setNavController(mNavController);
-        mBinding.setHandler(new Handler());
     }
 }

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="com.bobbiny.cordcalculator.mainNavHost.fragments.WelcomeFragment"
+        android:name="com.bobbiny.cordcalculator.mainNavHost.welcomeFragment.WelcomeFragment"
         android:label="fragment_welcome"
         tools:layout="@layout/fragment_welcome">
 
@@ -22,7 +22,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.bobbiny.cordcalculator.mainNavHost.fragments.MainFragment"
+        android:name="com.bobbiny.cordcalculator.mainNavHost.mainFragment.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" />
 

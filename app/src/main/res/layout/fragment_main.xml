@@ -4,8 +4,8 @@
     <data>
 
         <variable
-            name="handler"
-            type="com.bobbiny.cordcalculator.utils.Handler" />
+            name="presenter"
+            type="com.bobbiny.cordcalculator.mainNavHost.mainFragment.MainFragmentContract.Presenter" />
 
         <variable
             name="navController"
@@ -20,7 +20,7 @@
         android:background="@drawable/gradient_background"
         android:baselineAligned="false"
         android:orientation="horizontal"
-        tools:context="com.bobbiny.cordcalculator.mainNavHost.fragments.MainFragment">
+        tools:context="com.bobbiny.cordcalculator.mainNavHost.mainFragment.MainFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
@@ -131,7 +131,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="55dp"
                 android:adjustViewBounds="true"
-                android:onClick="@{(v) -> handler.onClickPreviousStep(v, imageButtonNext, navController)}"
+                android:onClick="@{(v) -> presenter.onClickPreviousStep(v, imageButtonNext, navController)}"
                 android:padding="@dimen/small_value"
                 android:src="@drawable/image_arrow_left"
                 android:visibility="invisible"
@@ -144,7 +144,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="55dp"
                 android:adjustViewBounds="true"
-                android:onClick="@{(v) -> handler.onClickNextStep(v, imageButtonPrevious, navController)}"
+                android:onClick="@{(v) -> presenter.onClickNextStep(v, imageButtonPrevious, navController)}"
                 android:padding="@dimen/small_value"
                 android:src="@drawable/image_arrow_right"
                 app:layout_constraintEnd_toEndOf="parent"

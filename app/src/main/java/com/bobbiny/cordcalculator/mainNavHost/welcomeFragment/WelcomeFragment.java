@@ -1,4 +1,4 @@
-package com.bobbiny.cordcalculator.mainNavHost.fragments;
+package com.bobbiny.cordcalculator.mainNavHost.welcomeFragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

@@ -1,18 +1,24 @@
-package com.bobbiny.cordcalculator.utils;
+package com.bobbiny.cordcalculator.mainNavHost.mainFragment;
 
 import android.view.View;
 import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.NavOptions;
 
 import com.android.cordcalculator.R;
 
-public class Handler {
+public class MainFragmentPresenter implements MainFragmentContract.Presenter {
+
+    @NonNull
+    private MainFragmentContract.View mView;
 
     private NavOptions mNavOptionsNextPrevious, mNavOptionsNext;
 
-    public Handler() {
+    MainFragmentPresenter(@NonNull MainFragmentContract.View view) {
+        mView = view;
+
         mNavOptionsNextPrevious = new NavOptions.Builder()
                 .setEnterAnim(R.anim.slide_in_right)
                 .setExitAnim(R.anim.slide_out_right)
@@ -28,6 +34,7 @@ public class Handler {
                 .build();
     }
 
+    @Override
     public void onClickPreviousStep(View imageButtonPrevious, ImageView imageButtonNext, NavController navController) {
         switch (navController.getCurrentDestination().getId()) {
             case R.id.secondStepFragment:
@@ -44,6 +51,7 @@ public class Handler {
         }
     }
 
+    @Override
     public void onClickNextStep(View imageButtonNext, ImageView imageButtonPrevious, NavController navController) {
         switch (navController.getCurrentDestination().getId()) {
             case R.id.firstStepFragment:
